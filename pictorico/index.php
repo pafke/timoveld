@@ -13,7 +13,7 @@
 
 get_header(); ?>
 
-	Test code voor upload
+	Test code voor upload versie 2
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
