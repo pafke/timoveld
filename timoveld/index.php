@@ -28,7 +28,6 @@ get_header(); ?>
 	Hallo daar<br>
 	Mijn naam is <em>Timo Veld</em><br>
 	en ik maak <em>websites</em> en <em>animaties</em>
-	test
 </div>
 
 
