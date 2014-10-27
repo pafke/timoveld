@@ -78,6 +78,10 @@ html, body {
   font-family: "Open Sans", sans-serif;
 }
 
+header nav {
+  display: inline-block;
+}
+
 h1 {
   font-family: "Lobster", cursive;
   margin: 10% 0 2% 0;
@@ -218,7 +222,7 @@ em {
 
 .site-logo, .site-logo img {
   height: 100%;
-  width: auto;
+  display: inline-block;
 }
 
 .portfolioDesc {
