@@ -23,6 +23,9 @@
 			<a href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' rel='home'><img src='<?php echo esc_url( get_theme_mod( 'themeslug_logo' ) ); ?>' alt='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'></a>
 		</div>
 		<?php endif; ?>
+		<nav>
+			<?php wp_nav_menu(); ?>
+		</nav>
 	</header>
 	
 

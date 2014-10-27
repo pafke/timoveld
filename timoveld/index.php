@@ -1,37 +1,16 @@
 <?php
 get_header(); ?>
 <div id="iCreate">		
-		<div id="iCreateText">I <span class="intro">Create</span> therefore I am.</div>
-		<script src="<?php bloginfo('template_directory'); ?>/js/createFlip.js"></script>
-		
-	<img id="arrow" width="6%" height="6%" src="<?php bloginfo('template_directory'); ?>/images/arrow.svg">
-	
-	<script>
-	$('#arrow').click(function(){
-		$('html,body').animate({scrollTop: $("header").offset().top},1000);
-	});
-	
-	(function pulse(back) {
-			$('#arrow').animate(
-				{
-					opacity: (back) ? 1 : 0.5,
-					height: (back) ? "6%" : "7%",
-					width: (back) ? "6%" : "7%",
-					'margin-left': (back) ? "-3%" : "-3.5%"
-				}, 900, function(){pulse(!back)});
-		})(false);
-	</script>
+	<div id="iCreateText">I <span class="intro">Create</span> therefore I am.</div>		
+	<img id="arrow" width="6%" height="6%" src="<?php bloginfo('template_directory'); ?>/images/arrow.svg">	
 </div>
 	
 <div id="iAm">
-<div class="portret"></div>
+	<div class="portret"></div>
 	Hallo daar<br>
 	Mijn naam is <em>Timo Veld</em><br>
 	en ik maak <em>websites</em> en <em>animaties</em>
 </div>
-
-
-
 
 <div id="mySkills">
 	Om mijn <em>websites</em> en <em>animaties</em> vorm te geven<br> 
@@ -55,9 +34,7 @@ get_header(); ?>
 
 <div id="myPortfolio">
 	Een beter <em>beeld</em> krijg je waarschijnlijk van mijn online <em>portfolio</em>
-	<h1>Web</h1>
-	
-		
+	<h1>Web</h1>		
 </div>
 
 <script>
@@ -66,6 +43,7 @@ $('.portfolioImage').click(function(){
 });
 </script>
 
-
+<script src="<?php bloginfo('template_directory'); ?>/js/createFlip.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/scrollFunctions.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/pulseArrow.js"></script>
 <?php get_footer(); ?>
