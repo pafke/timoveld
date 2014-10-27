@@ -33,9 +33,6 @@
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #site-navigation -->
-			<div class="header-search">
-				<?php get_search_form(); ?>
-			</div>
 		</div>
 	</header><!-- #masthead -->
 	<?php if ( is_home() && pictorico_has_featured_posts( 1 ) ) : ?>

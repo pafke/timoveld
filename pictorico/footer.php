@@ -8,10 +8,7 @@
  */
 ?>
 
-	</div><!-- #content -->
-	<?php if ( is_active_sidebar( 'sidebar-1' ) || is_active_sidebar( 'sidebar-2' ) || is_active_sidebar( 'sidebar-3' ) || is_active_sidebar( 'sidebar-4' ) ) : ?>
-		<?php get_sidebar(); ?>
-	<?php endif; ?>
+	</div><!-- #content -->	
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'pictorico' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'pictorico' ), 'WordPress' ); ?></a>
