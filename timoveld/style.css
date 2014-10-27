@@ -75,17 +75,17 @@ a {
 
 html, body {
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   margin: 10% 0 2% 0;
 }
 
 #iCreate {
   position: relative;
-  background: #87E293;
+  background: #87e292;
   width: 100%;
   height: 100%;
   color: white;
@@ -94,7 +94,7 @@ h1 {
 
 #iCreateText {
   position: absolute;
-  font-size: 2em;
+  font-size: 30px;
   top: 50%;
   width: 100%;
   display: block;
@@ -105,7 +105,7 @@ h1 {
 .intro {
   display: block-inline;
   height: 1px;
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
 }
 
 #arrow {
@@ -119,28 +119,28 @@ h1 {
 
 #iAm {
   padding: 10% 0;
-  background: #87A1D4;
+  background: #87a1d4;
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
   font-weight: 300;
 }
 
 #mySkills {
   padding: 10% 0;
-  background: #F6FD97;
-  color: #000;
+  background: #f6fd97;
+  color: black;
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
   font-weight: 300;
 }
 
 #myPortfolio {
   padding: 10% 0;
-  background: #FF9D98;
+  background: #ff9d98;
   color: white;
   text-align: center;
-  font-size: 3em;
+  font-size: 48px;
   font-weight: 300;
 }
 
@@ -172,7 +172,7 @@ em {
 }
 
 #skillContainer {
-  background: #FBFED6;
+  background: #fbfed6;
   width: 90%;
   margin: 0 auto;
   font-size: .5em;
@@ -186,7 +186,7 @@ em {
 }
 
 .skillIndicator {
-  background: #87A1D4;
+  background: #87a1d4;
   height: 20px;
 }
 
@@ -205,13 +205,25 @@ em {
   width: 100%;
   height: 100%;
   font-size: 0.5em;
-  background: #87E292;
+  background: #87e292;
   display: none;
 }
 
 .portfolioDesc a {
   padding: 5%;
   display: block;
-  background: #87A1D4;
+  background: #87a1d4;
   text-decoration: none;
+}
+
+/*Media query imports*/
+@media (min-width: 650px) {
+  #iCreateText {
+    font-size: 48px;
+  }
+}
+@media (min-width: 900px) {
+  #iCreateText {
+    font-size: 58px;
+  }
 }
