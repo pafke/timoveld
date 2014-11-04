@@ -78,6 +78,10 @@ html, body {
   font-family: "Open Sans", sans-serif;
 }
 
+header nav {
+  display: inline-block;
+}
+
 h1 {
   font-family: "Lobster", cursive;
   margin: 10% 0 2% 0;
@@ -196,6 +200,29 @@ em {
   position: relative;
   cursor: pointer;
   cursor: hand;
+}
+
+.portfolioDesc {
+  position: abolute;
+  padding: 5%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 0.5em;
+  background: #87E292;
+  display: none;
+}
+
+.portfolioDesc a {
+  padding: 5%;
+  display: block;
+  background: #87A1D4;
+  text-decoration: none;
+}
+
+.site-logo, .site-logo img {
+  height: 100%;
+  display: inline-block;
 }
 
 .portfolioDesc {
