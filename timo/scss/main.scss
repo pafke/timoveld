@@ -1,0 +1,227 @@
+@import 'reset';
+@import 'variables';
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #444;
+	font-size: 18px;
+	line-height: 1.1;
+}
+h2 {
+	color: $maincolor;
+	font-size: 28px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+h3 {
+	font-weight: 600;
+	font-size: 110%;
+}
+em {
+	font-weight: 600;
+}
+p{
+	margin-top:10px;
+}
+a {
+	color: $maincolor;
+	text-decoration: none;
+}
+.table {
+	display: table;
+}
+.cell {
+	display: table-cell;
+	vertical-align: middle;
+}
+.maincolorBG {
+	background: $maincolor;
+	color: $light;
+}
+.fullscreen {
+	width: 100%;
+	height: 100%;
+}
+.fullscreen svg{
+	margin-top: 25px;
+}
+.content {
+	text-align:center;
+	padding: 50px 25px;
+}
+.centermsg {
+	font-weight: 100;
+	text-align: center;
+	font-size: 48px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.centermsg span {
+	font-weight: 400;
+}
+.forcebreak:after {
+	content: "\A";
+	white-space: pre;
+}
+.absolutecenter {
+	position: absolute;
+	width:100%;
+	bottom: 50px;
+	left:0;
+	text-align: center;
+}
+.roundimg {
+	border-radius: 50%;
+	margin-top: 25px;
+}
+.self {
+	width: 320px;
+}
+#logo {
+	width: 200px;
+	height: 200px;
+}
+.logofixed {
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	display: none;
+	z-index: 99;
+}
+.logofixed svg {
+	width: 90px;
+	height: 90px;
+}
+/* Hamburger menu stylen */
+.menui {
+	background: $light;
+	transition: 0.6s ease;
+	transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+	margin-top: 10px;
+	position: absolute;
+}
+.icon {
+	z-index: 999;
+	position: fixed;
+	display: block;
+	height: 32px;
+	width: 32px;
+	margin: 0px;
+	top: 0;
+	right: 0;
+}
+.mobilenav {
+	font-family: inherit;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: table;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: $maincolor;
+	opacity: 0.9;
+}
+.mobilenav li {
+	list-style-type: none;
+	text-align: center;
+	padding: 25px;
+}
+.mobilenav li a {
+	font-size: 200%;
+	color: $light;
+	text-decoration: none;
+	font-weight: 400;
+	width: 100%;
+}
+.top-animate {
+	background: $light !important;
+	top: 13px !important;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.mid-animate {
+	opacity: 0;
+}
+.bottom-animate {
+	background: $light !important;
+	top: 13px !important;
+	-webkit-transform: rotate(-225deg);
+	transform: rotate(-225deg);
+}
+.top-menu {
+	top: 5px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
+	background-color: $light;
+}
+.mid-menu {
+	top: 13px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
+	background-color: $light;
+}
+.bottom-menu {
+	top: 21px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
+	background-color: $light;
+}
+.black .top-menu,
+.black .mid-menu,
+.black .bottom-menu{
+	background-color: #000;
+}
+.mobilenav ul {
+	display: table-cell;
+	vertical-align: middle;
+}
+/* Masonry */
+#container {
+  margin: 0 auto;
+}
+.item {
+	width: 400px;
+	height: 300px;
+	margin-top: 25px;
+	overflow: hidden;
+}
+.overlay {
+	position: absolute;
+	color: $light;
+	width: 100%;
+	height: 100%;
+	background: $maincolor;
+	z-index: 99;
+	top: 0;
+	transform: translateY(-100%);
+    transition: all 0.3s ease-in-out 0s;
+	display: table;
+	padding: 25px;
+	font-size: 18px;
+}
+.item:hover .overlay {
+	transform: translatey(0);
+}
+.overlay a {
+	background: none;
+	border: solid 2px $light;
+	padding: 15px;
+	color: $light;
+	margin-top: 15px;
+	display: inline-block;
+}
+.overlay a:hover {
+	background: $light;
+	color: $maincolor;
+}
+
+
+/* MEDIUM SIZE */
+@import 'size_med';
+
+/* LARGE SIZE */
+@import 'size_large';
