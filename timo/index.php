@@ -2,8 +2,8 @@
 get_header(); ?>
 		<section class="fullscreen table maincolorBG">
 			<div class="centermsg">
-				
-		
+
+
 				I <span class="forcebreak" data-typer-targets="Create,Develop,Render,Design,Debug,Visualise,Animate">Design</span>
 				therefor I am.
 				<br>
@@ -40,7 +40,7 @@ get_header(); ?>
 				Kun je altijd <a href="">contact</a> met mij opnemen.
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
-		</section>		
+		</section>
 
 		<section class="content maincolorBG">
 			<h2>Mijn skillset</h2>
@@ -53,7 +53,7 @@ get_header(); ?>
 			<p>
 				Een <em>overzicht</em> van mijn <em>skillset</em>
 			</p>
-			
+
 			<div class="table skillset">
 				<div class="row">
 					<div class="cell">
@@ -80,8 +80,6 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-			
-			
 		</section>
 
 		<section class="content">
@@ -94,7 +92,7 @@ get_header(); ?>
 					<?php the_post_thumbnail( 'portfolio-small' ); ?>
 					<div class="overlay">
 						<div class="cell">
-						
+
 							<h3><?php the_title();?></h3>
 							<p>
 								<?php the_content(); ?>
@@ -105,7 +103,7 @@ get_header(); ?>
 							$video = get_post_meta($post->ID, $key, TRUE);
 							$external = get_post_meta($post->ID, $key1, TRUE);
 							if($video != '') {?>
-							
+
 							<a href="http://www.youtube.com/watch?v=<?php echo $video ?>" rel="prettyPhoto" title="<?php the_title(); ?>">
 								Bekijk video
 							</a>
@@ -114,21 +112,21 @@ get_header(); ?>
 							}
 							else if($external != ''){
 							?>
-							
+
 							<a href="<?php echo $external; ?>" target="_blank">
 								Bekijk website
 							</a>
-							
+
 							<?php
 							}
 							else{
 							$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 							?>
-							
+
 							<a href="<?php echo $url; ?>"  rel="prettyPhoto" title="<?php the_title(); ?>">
 								Bekijk afbeelding
 							</a>
-							
+
 							<?php } ?>
 
 						</div>
