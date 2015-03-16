@@ -86,7 +86,7 @@ a {
 	left: 10px;
 	top: 10px;
 	display: none;
-	z-index: 99;
+	z-index: 999;
 }
 .logofixed svg {
 	width: 90px;
@@ -201,7 +201,6 @@ a {
     transition: all 0.3s ease-in-out 0s;
 	display: table;
 	padding: 25px;
-	font-size: 18px;
 }
 .item:hover .overlay {
 	transform: translatey(0);
