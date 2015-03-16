@@ -31,7 +31,7 @@ get_header(); ?>
 			<p>
 				<em>Mooie dingen</em> maken vind ik gaaf.<br>
 				Problemen <em>oplossen</em> doe ik graag.
-			</p>			
+			</p>
 			<p>
 				Momenteel werk ik bij <a href="">Big Impact.</a><br>
 				Maar voor een <em>interessant project</em>,<br>
@@ -39,7 +39,7 @@ get_header(); ?>
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>
-		
+
 		<section class="content">
 			<h2>Mijn skillset</h2>
 			<p>
@@ -52,108 +52,61 @@ get_header(); ?>
 				Een kort <em>overzicht</em> van mijn ervaring:
 			</p>
 		</section>
-		
+
 		<section class="content">
 			<h2>Werk</h2>
 			<div id="container">
+
+			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
 				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
+					<?php the_post_thumbnail( 'portfolio-small' ); ?>
 					<div class="overlay">
 						<div class="cell">
-							<h3>Onderwerp</h3>
+						
+							<h3><?php the_title();?></h3>
 							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
+								<?php the_content(); ?>
 							</p>
+							<?php
+							$key = 'video';
+							$key1 = 'external';
+							$video = get_post_meta($post->ID, $key, TRUE);
+							$external = get_post_meta($post->ID, $key1, TRUE);
+							if($video != '') {?>
+
 							<a href="#">
 								Bekijk video
 							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
-							<a href="#">
-								Bekijk video
+
+							<?php
+							}
+							else if($external != ''){
+							?>
+							
+							<a href="#" target="_blank">
+								Bekijk link
 							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
+							
+							<?php
+							}
+							else{
+							?>
+							
 							<a href="#">
-								Bekijk video
+								Bekijk afbeelding
 							</a>
+							
+							<?php } ?>
+
 						</div>
 					</div>
 				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
-							<a href="#">
-								Bekijk video
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
-							<a href="#">
-								Bekijk video
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
-							<a href="#">
-								Bekijk video
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<img src="<?php echo get_template_directory_uri(); ?>/img/example.jpg">
-					<div class="overlay">
-						<div class="cell">
-							<h3>Onderwerp</h3>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eget lacus vel felis facilisis efficitur eget ac diam. Quisque tincidunt ligula non tempus mollis.
-							</p>
-							<a href="#">
-								Bekijk video
-							</a>
-						</div>
-					</div>
-				</div>
+
+			<?php endwhile; else : ?>
+				<p><?php _e( 'Er is iets mis gegaan.' ); ?></p>
+			<?php endif; ?>
+
 			</div>
 		</section>
-		<?php get_footer(); ?>		
+		<?php get_footer(); ?>
