@@ -42,7 +42,7 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>		
 
-		<section class="content">
+		<section class="content maincolorBG">
 			<h2>Mijn skillset</h2>
 			<p>
 				Mooie dingen maken en problemen oplossen bereik je niet zomaar.
@@ -51,8 +51,37 @@ get_header(); ?>
 				Gedurende mijn studie <em>ICT Multimedia design</em>, mijn periode als <em>freelancer</em> en tijdens mijn functie bij <em>Big Impact</em> heb ik een hoop <em>ervaring</em> opgedaan.
 			</p>
 			<p>
-				Een kort <em>overzicht</em> van mijn ervaring:
+				Een <em>overzicht</em> van mijn <em>skillset</em>
 			</p>
+			
+			<div class="table skillset">
+				<div class="row">
+					<div class="cell">
+						Skill 1
+					</div>
+					<div class="cell">
+						<span class="star starfull"></span><span class="star starfull"></span><span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell">
+						Skill 2
+					</div>
+					<div class="cell">
+						<span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span><span class="star starempty"></span><span class="star starempty"></span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell">
+						Skill 3
+					</div>
+					<div class="cell">
+						<span class="star starfull"></span><span class="star starfull"></span><span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span>
+					</div>
+				</div>
+			</div>
+			
+			
 		</section>
 
 		<section class="content">

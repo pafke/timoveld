@@ -1,5 +1,6 @@
 @import 'reset';
 @import 'variables';
+@import 'fonts';
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -30,12 +31,18 @@ a {
 .table {
 	display: table;
 }
+.row {
+	display: table-row;
+}
 .cell {
 	display: table-cell;
 	vertical-align: middle;
 }
 .maincolorBG {
 	background: $maincolor;
+	color: $light;
+}
+.maincolorBG h2 {
 	color: $light;
 }
 .fullscreen {
@@ -216,6 +223,30 @@ a {
 .overlay a:hover {
 	background: $light;
 	color: $maincolor;
+}
+/* Skillset */
+.star {
+	font-family: 'fontello';
+	font-size: 38px;
+}
+.starfull::before {
+    content: "\e800";
+	margin-right: 10px;
+}
+.starempty::before {
+    content: "\e801";
+	margin-right: 10px;
+}
+.skillset {
+	border: solid 4px $light;
+	padding: 25px;
+	width: 80%;
+	margin: 10px auto 0 auto;
+	font-size: 120%;
+}
+.skillset .cell {
+	text-align: left;
+	line-height: 38px;
 }
 
 

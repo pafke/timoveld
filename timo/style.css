@@ -50,6 +50,12 @@ table {
 a {
   outline: none; }
 
+@font-face {
+  font-family: 'fontello';
+  src: url("fonts/fontello.eot?81621583");
+  src: url("fonts/fontello.eot?81621583#iefix") format("embedded-opentype"), url("fonts/fontello.woff?81621583") format("woff"), url("fonts/fontello.ttf?81621583") format("truetype"), url("fonts/fontello.svg?81621583#fontello") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 body {
   font-family: 'Raleway', sans-serif;
   color: #444;
@@ -79,12 +85,18 @@ a {
 .table {
   display: table; }
 
+.row {
+  display: table-row; }
+
 .cell {
   display: table-cell;
   vertical-align: middle; }
 
 .maincolorBG {
   background: #50ccb7;
+  color: #FFF; }
+
+.maincolorBG h2 {
   color: #FFF; }
 
 .fullscreen {
@@ -265,6 +277,30 @@ a {
 .overlay a:hover {
   background: #FFF;
   color: #50ccb7; }
+
+/* Skillset */
+.star {
+  font-family: 'fontello';
+  font-size: 38px; }
+
+.starfull::before {
+  content: "\e800";
+  margin-right: 10px; }
+
+.starempty::before {
+  content: "\e801";
+  margin-right: 10px; }
+
+.skillset {
+  border: solid 4px #FFF;
+  padding: 25px;
+  width: 80%;
+  margin: 10px auto 0 auto;
+  font-size: 120%; }
+
+.skillset .cell {
+  text-align: left;
+  line-height: 38px; }
 
 /* MEDIUM SIZE */
 @media (min-width: 640px) {
