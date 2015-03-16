@@ -56,8 +56,8 @@ get_header(); ?>
 		<section class="content">
 			<h2>Werk</h2>
 			<div id="container">
-
-			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+			<?php $query = new WP_Query( 'cat=6' ); ?>
+			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 				<div class="item">
 					<?php the_post_thumbnail( 'portfolio-small' ); ?>
@@ -75,7 +75,7 @@ get_header(); ?>
 							$external = get_post_meta($post->ID, $key1, TRUE);
 							if($video != '') {?>
 							
-							<a href="http://www.youtube.com/watch?v=<?php echo $video ?>" rel="prettyPhoto" title="">
+							<a href="http://www.youtube.com/watch?v=<?php echo $video ?>" rel="prettyPhoto" title="<?php the_title(); ?>">
 								Bekijk video
 							</a>
 
@@ -84,16 +84,17 @@ get_header(); ?>
 							else if($external != ''){
 							?>
 							
-							<a href="#" target="_blank">
+							<a href="<?php echo $external; ?>" target="_blank">
 								Bekijk website
 							</a>
 							
 							<?php
 							}
 							else{
+							$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 							?>
 							
-							<a href="#">
+							<a href="<?php echo $url; ?>"  rel="prettyPhoto" title="<?php the_title(); ?>">
 								Bekijk afbeelding
 							</a>
 							
