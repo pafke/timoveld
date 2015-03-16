@@ -2,7 +2,9 @@
 get_header(); ?>
 		<section class="fullscreen table maincolorBG">
 			<div class="centermsg">
-				I <span class="forcebreak">Design</span>
+				
+		
+				I <span class="forcebreak" data-typer-targets="Create,Develop,Render,Design,Debug,Visualise,Animate">Design</span>
 				therefor I am.
 				<br>
 				<svg id="logo" version="1.1" viewBox="0 0 290 290"  >
@@ -38,7 +40,7 @@ get_header(); ?>
 				Kun je altijd <a href="">contact</a> met mij opnemen.
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
-		</section>
+		</section>		
 
 		<section class="content">
 			<h2>Mijn skillset</h2>

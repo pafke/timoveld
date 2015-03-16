@@ -1,5 +1,5 @@
 		<?php wp_footer(); ?>
-		
+
 		<script>
 			$(document).ready(function () {
 				$(".mobilenav").hide();
@@ -11,7 +11,7 @@
 				});
 			});
 		</script>
-		
+
 		<script>
 			$(document).ready(function () {
 				var $container = $('#container');
@@ -23,7 +23,7 @@
 				});
 			});
 		</script>
-		
+
 		<script>
 		  $(document).ready(function(){
 			$("a[rel^='prettyPhoto']").prettyPhoto({
@@ -35,6 +35,16 @@
 			});
 		  });
 		</script>
-		
+
+		<script>
+			$(function () {
+				$.typer.options.typeSpeed = 120;
+				$.typer.options.typerInterval = 4000;
+				$('[data-typer-targets]').typer({
+					
+				});
+			});
+		</script>
+
 	</body>
 </html>
