@@ -74,8 +74,8 @@ get_header(); ?>
 							$video = get_post_meta($post->ID, $key, TRUE);
 							$external = get_post_meta($post->ID, $key1, TRUE);
 							if($video != '') {?>
-
-							<a href="#">
+							
+							<a href="http://www.youtube.com/watch?v=<?php echo $video ?>" rel="prettyPhoto" title="">
 								Bekijk video
 							</a>
 
@@ -85,7 +85,7 @@ get_header(); ?>
 							?>
 							
 							<a href="#" target="_blank">
-								Bekijk link
+								Bekijk website
 							</a>
 							
 							<?php

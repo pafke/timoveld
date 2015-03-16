@@ -24,7 +24,16 @@
 			});
 		</script>
 		
-		
+		<script>
+		  $(document).ready(function(){
+			$("a[rel^='prettyPhoto']").prettyPhoto({
+				show_title: false,
+				social_tools: false,
+				default_width: $(window).width(),
+				default_height: $(window).height()
+			});
+		  });
+		</script>
 		
 	</body>
 </html>
