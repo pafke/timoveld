@@ -149,7 +149,6 @@ function save_skill_data( $post_id ) {
 add_action( 'save_post', 'save_skill_data' );
 
 
-
 // Change the columns for the edit CPT screen
 function change_columns( $cols ) {
   $cols = array(
@@ -173,3 +172,45 @@ add_action( "manage_posts_custom_column", "custom_columns", 10, 2 );
 
 
 
+// Add to our admin_init function
+add_action('quick_edit_custom_box',  'shiba_add_quick_edit', 10, 2);
+
+function shiba_add_quick_edit($column_name, $post_type) {
+    if ($column_name != 'skill_meta') return;
+    ?>
+    <fieldset class="inline-edit-col-left">
+    <div class="inline-edit-col">
+        <span class="title">Skill level</span>
+        <input type="number" name="shiba_widget_set_noncename" id="shiba_widget_set_noncename" value="" />
+    </div>
+    </fieldset>
+    <?php
+}
+
+// Add to our admin_init function
+add_action('save_post', 'shiba_save_quick_edit_data');
+
+function shiba_save_quick_edit_data($post_id) {
+    // verify if this is an auto save routine. If it is our form has not been submitted, so we dont want
+    // to do anything
+    if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
+        return $post_id;
+    // Check permissions
+    if ( 'skill' == $_POST['post_type'] ) {
+        if ( !current_user_can( 'edit_page', $post_id ) )
+            return $post_id;
+    } else {
+        if ( !current_user_can( 'edit_post', $post_id ) )
+        return $post_id;
+    }
+    // OK, we're authenticated: we need to find and save the data
+    $post = get_post($post_id);
+    if (isset($_POST['shiba_widget_set_noncename']) && ($post->post_type != 'revision')) {
+        $widget_set_id = esc_attr($_POST['shiba_widget_set_noncename']);
+        if ($widget_set_id)
+            update_post_meta( $post_id, 'skill_meta', $widget_set_id);
+        else
+            delete_post_meta( $post_id, 'skill_meta');
+    }
+    return $widget_set_id;
+}
