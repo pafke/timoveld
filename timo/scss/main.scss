@@ -251,7 +251,34 @@ a {
 	text-align: left;
 	line-height: 38px;
 }
-
+/* Contact formulier */
+.contact {
+    background: repeating-linear-gradient(
+		45deg,
+		#CC5065,
+		#CC5065 20px,
+		#ffffff 20px,
+		#ffffff 40px,
+		#58a9c9 40px,
+		#58a9c9 60px,
+		#ffffff 60px,
+		#ffffff 80px
+    );
+    padding: 10px;
+    border: solid #DDD 1px;
+}
+.contactform {
+	padding: 50px;
+	background: #f0f0f0;
+	text-align: left;
+}
+.contactform span {
+	display: block;
+	font-size: 24px;
+}
+.contactform h2 {
+	color: #444;
+}
 
 /* MEDIUM SIZE */
 @import 'size_med';

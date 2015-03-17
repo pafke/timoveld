@@ -1,3 +1,14 @@
+		<section class="content contact">
+			<div class="contactform">
+				<h2>Contact</h2>
+				<span>T. 06 435 11 371</span>
+				<span>M. mail@timoveld.nl</span>
+				<p>
+					U kunt altijd contact met mij opnemen!
+				</p>
+			</div>
+		</section>
+		
 		<?php wp_footer(); ?>
 
 		<script>
