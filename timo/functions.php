@@ -37,6 +37,7 @@ function theme_name_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
+// Custom post type skills toevoegen
 function add_skills_post() {
   register_post_type( 'skill',
     array(
@@ -51,9 +52,7 @@ function add_skills_post() {
 }
 add_action( 'init', 'add_skills_post' );
 
-/**
- * Adds a box to the main column on the Post and Page edit screens.
- */
+// Meta box toevoegen met custom waarde 'skill'
 function skill_meta_box() {
 
 	$screens = array( 'skill' );
@@ -70,11 +69,7 @@ function skill_meta_box() {
 }
 add_action( 'add_meta_boxes', 'skill_meta_box' );
 
-/**
- * Prints the box content.
- *
- * @param WP_Post $post The object for the current post/page.
- */
+// Callback die input field genereerd aan de backend
 function skill_meta_callback( $post ) {
 
 	// Add an nonce field so we can check for it later.
@@ -92,11 +87,7 @@ function skill_meta_callback( $post ) {
 	echo '<input type="number" id="skill_field" name="skill_field" value="' . esc_attr( $value ) . '" size="15" />';
 }
 
-/**
- * When the post is saved, saves our custom data.
- *
- * @param int $post_id The ID of the post being saved.
- */
+// Skill data op custom post type opslaan
 function save_skill_data( $post_id ) {
 
 	/*
@@ -149,48 +140,43 @@ function save_skill_data( $post_id ) {
 add_action( 'save_post', 'save_skill_data' );
 
 
-// Change the columns for the edit CPT screen
+// Collums aanpassen
 function change_columns( $cols ) {
   $cols = array(
     'cb'       => '<input type="checkbox" />',
     'title'       => '',
-    'skill_meta' => __( 'Skill_meta', 'trans' ),
+    'skill_meta' => __( 'Skill level', 'trans' ),
   );
   return $cols;
 }
 add_filter( "manage_skill_posts_columns", "change_columns" );
-
+// Column skill level tonen bij custom post type skills
 function custom_columns( $column, $post_id ) {
   switch ( $column ) {
     case "skill_meta":
       $refer = get_post_meta( $post_id, 'skill_meta', true);
-      echo '<a href="' . $refer . '">' . $refer. '</a>';
+      echo $refer;
       break;
   }
 }
 add_action( "manage_posts_custom_column", "custom_columns", 10, 2 );
 
-
-
-// Add to our admin_init function
-add_action('quick_edit_custom_box',  'shiba_add_quick_edit', 10, 2);
-
-function shiba_add_quick_edit($column_name, $post_type) {
+// Quickedit box aanmaken voor skill level
+function skill_add_quicksave($column_name, $post_type) {
     if ($column_name != 'skill_meta') return;
     ?>
     <fieldset class="inline-edit-col-left">
     <div class="inline-edit-col">
         <span class="title">Skill level</span>
-        <input type="number" name="shiba_widget_set_noncename" id="shiba_widget_set_noncename" value="" />
+        <input type="number" name="new_meta_skill" id="new_meta_skill" value="" />
     </div>
     </fieldset>
     <?php
 }
+add_action('quick_edit_custom_box',  'skill_add_quicksave', 10, 2);
 
-// Add to our admin_init function
-add_action('save_post', 'shiba_save_quick_edit_data');
-
-function shiba_save_quick_edit_data($post_id) {
+// Save quickedit waarde
+function skill_save_quick_edit_data($post_id) {
     // verify if this is an auto save routine. If it is our form has not been submitted, so we dont want
     // to do anything
     if ( defined('DOING_AUTOSAVE') && DOING_AUTOSAVE )
@@ -205,12 +191,13 @@ function shiba_save_quick_edit_data($post_id) {
     }
     // OK, we're authenticated: we need to find and save the data
     $post = get_post($post_id);
-    if (isset($_POST['shiba_widget_set_noncename']) && ($post->post_type != 'revision')) {
-        $widget_set_id = esc_attr($_POST['shiba_widget_set_noncename']);
-        if ($widget_set_id)
-            update_post_meta( $post_id, 'skill_meta', $widget_set_id);
+    if (isset($_POST['new_meta_skill']) && ($post->post_type != 'revision')) {
+        $skill_set_id = esc_attr($_POST['new_meta_skill']);
+        if ($skill_set_id)
+            update_post_meta( $post_id, 'skill_meta', $skill_set_id);
         else
             delete_post_meta( $post_id, 'skill_meta');
     }
-    return $widget_set_id;
+    return $skill_set_id;
 }
+add_action('save_post', 'skill_save_quick_edit_data');
