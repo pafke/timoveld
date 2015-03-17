@@ -55,54 +55,28 @@ get_header(); ?>
 			</p>
 
 			<div class="table skillset">
-			
+
 				<?php
-					
 					$args = array( 'post_type' => 'skill');
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 					$skillkey = 'skill_meta';
 					$skill = get_post_meta($post->ID, $skillkey, TRUE);
 				?>
-				
+
 				<div class="row">
 					<div class="cell">
 						<?php the_title(); ?>
 					</div>
 					<div class="cell">
-						<?php echo $skill; ?>
+						<?php echo str_repeat("<span class='star starfull'></span>", $skill); ?><?php echo str_repeat("<span class='star starempty'></span>", (10-$skill)); ?>
 					</div>
-				</div>					
-					
-				<?php	
+				</div>
+
+				<?php
 					endwhile;
-					
 				?>
-			
-				<div class="row">
-					<div class="cell">
-						Skill 1
-					</div>
-					<div class="cell">
-						<span class="star starfull"></span><span class="star starfull"></span><span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="cell">
-						Skill 2
-					</div>
-					<div class="cell">
-						<span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span><span class="star starempty"></span><span class="star starempty"></span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="cell">
-						Skill 3
-					</div>
-					<div class="cell">
-						<span class="star starfull"></span><span class="star starfull"></span><span class="star starfull"></span><span class="star starempty"></span><span class="star starempty"></span>
-					</div>
-				</div>
+
 			</div>
 		</section>
 
