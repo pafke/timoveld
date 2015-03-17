@@ -19,7 +19,7 @@ function fadinstars (elem){
 
 var skillset = new Waypoint({
 	element: document.getElementById('skilltrigger'),
-	offset: 'bottom-in-view',
+	offset: '100%',
 	handler: function(direction) {
 		if(direction == 'down'){
 			$('.skillset .row:first .stars').css('visibility','visible').hide().animate({left:200, opacity:"show"}, 200, "linear", function() {
