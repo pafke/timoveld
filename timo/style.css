@@ -280,7 +280,7 @@ a {
 
 /* Skillset */
 .stars {
-  display: none; }
+  visibility: hidden; }
 
 .star {
   font-family: 'fontello';
