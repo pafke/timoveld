@@ -55,6 +55,30 @@ get_header(); ?>
 			</p>
 
 			<div class="table skillset">
+			
+				<?php
+					
+					$args = array( 'post_type' => 'skill');
+					$loop = new WP_Query( $args );
+					while ( $loop->have_posts() ) : $loop->the_post();
+					$skillkey = 'skill_meta';
+					$skill = get_post_meta($post->ID, $skillkey, TRUE);
+				?>
+				
+				<div class="row">
+					<div class="cell">
+						<?php the_title(); ?>
+					</div>
+					<div class="cell">
+						<?php echo $skill; ?>
+					</div>
+				</div>					
+					
+				<?php	
+					endwhile;
+					
+				?>
+			
 				<div class="row">
 					<div class="cell">
 						Skill 1
