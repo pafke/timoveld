@@ -37,12 +37,10 @@
 		</script>
 
 		<script>
-			$(function () {
+			$(document).ready(function(){
 				$.typer.options.typeSpeed = 120;
 				$.typer.options.typerInterval = 4000;
-				$('[data-typer-targets]').typer({
-					
-				});
+				$('[data-typer-targets]').typer();
 			});
 		</script>
 

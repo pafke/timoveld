@@ -54,7 +54,7 @@ get_header(); ?>
 				Een <em>overzicht</em> van mijn <em>skillset</em>
 			</p>
 
-			<div class="table skillset">
+			<div class="table skillset" id="skilltrigger">
 
 				<?php
 					$args = array( 'post_type' => 'skill');
@@ -68,7 +68,7 @@ get_header(); ?>
 					<div class="cell">
 						<?php the_title(); ?>
 					</div>
-					<div class="cell">
+					<div class="cell stars">
 						<?php echo str_repeat("<span class='star starfull'></span>", $skill); ?><?php echo str_repeat("<span class='star starempty'></span>", (10-$skill)); ?>
 					</div>
 				</div>

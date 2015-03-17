@@ -279,6 +279,9 @@ a {
   color: #50ccb7; }
 
 /* Skillset */
+.stars {
+  display: none; }
+
 .star {
   font-family: 'fontello';
   font-size: 38px; }
