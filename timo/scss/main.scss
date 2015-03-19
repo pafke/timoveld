@@ -272,9 +272,13 @@ a {
 	background: #f0f0f0;
 	text-align: left;
 }
-.contactform span {
-	display: block;
+.contactform a {
+	clear: left;
 	font-size: 24px;
+}
+.contactform a:after {
+	content:"\A";
+	white-space:pre;
 }
 .contactform h2 {
 	color: #444;

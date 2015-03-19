@@ -1,10 +1,10 @@
 		<section class="content contact">
 			<div class="contactform">
 				<h2>Contact</h2>
-				<span>T. 06 435 11 371</span>
-				<span>M. mail@timoveld.nl</span>
+				<a href="tel:0643511371">T. 06 435 11 371</a>
+				<a href="mailto:mail@timoveld.nl">M. mail@timoveld.nl</a>
 				<p>
-					U kunt altijd contact met mij opnemen!
+					Voor vragen, eventuele samenwerking, of gewoon omdat het kan, mag je altijd contact met mij opnemen.
 				</p>
 			</div>
 		</section>
