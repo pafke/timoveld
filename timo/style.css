@@ -263,7 +263,8 @@ a {
   display: table;
   padding: 25px; }
 
-.item:hover .overlay {
+.item:hover .overlay,
+.toggleMenu .overlay {
   transform: translatey(0); }
 
 .overlay a {

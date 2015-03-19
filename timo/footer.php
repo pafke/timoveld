@@ -54,6 +54,21 @@
 				$('[data-typer-targets]').typer();
 			});
 		</script>
+		
+		<?php
+		if ( wp_is_mobile() ) {
+		?>
+		<script>
+			$(document).ready(function(){
+				$('.item').click(function(){
+					$(this).toggleClass('toggleMenu');
+				});
+			});
+		</script>
+		<?php
+		}
+		?>
+		
 
 	</body>
 </html>
