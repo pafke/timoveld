@@ -280,9 +280,6 @@ a {
   color: #50ccb7; }
 
 /* Skillset */
-.stars {
-  visibility: hidden; }
-
 .star {
   font-family: 'fontello';
   font-size: 38px; }
