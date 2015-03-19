@@ -24,7 +24,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="content" id="basic-waypoint">
+		<section class="content" id="voorstellen-trigger">
 			<h2>Hallo daar</h2>
 			<p>
 				Mijn naam is <em>Timo Veld</em><br>
@@ -42,7 +42,7 @@ get_header(); ?>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>
 
-		<section class="content maincolorBG">
+		<section class="content maincolorBG" id="skillset-trigger">
 			<h2>Mijn skillset</h2>
 			<p>
 				Mooie dingen maken en problemen oplossen bereik je niet zomaar.
@@ -80,7 +80,7 @@ get_header(); ?>
 			</div>
 		</section>
 
-		<section class="content">
+		<section class="content" id="werk-trigger">
 			<h2>Werk</h2>
 			<div id="container">
 			<?php $query = new WP_Query( 'cat=6'.'&orderby=rand'); ?>

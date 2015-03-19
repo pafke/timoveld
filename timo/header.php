@@ -6,11 +6,11 @@
 	<body>
 		<div class="mobilenav">
 			<ul>
-				<li><a href="#">Wij staan bovenaan</a></li>
-				<li><a href="#">Even voorstellen</a></li>
-				<li><a href="#">I got skills!</a></li>
-				<li><a href="#">Werk</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a class="top-trigger" href="#">Wij staan bovenaan</a></li>
+				<li><a class="voorstellen-trigger" href="#">Even voorstellen</a></li>
+				<li><a class="skillset-trigger" href="#">I got skills!</a></li>
+				<li><a class="werk-trigger" href="#">Werk</a></li>
+				<li><a class="contact-trigger" href="#">Contact</a></li>
 			</ul>
 		</div>
 
