@@ -12,11 +12,13 @@ $('.mobilenav a').click(function(){
 	console.log(identifier);
 	if(identifier == 'top-scrollTo'){
 		$('html,body').animate({scrollTop: 0},1000);
-	}else if(identifier == 'contact-scrollTo'){
-		$('html,body').animate({scrollTop: $(document).height()},1000);
 	}
-	else{
+	else if(identifier != 'contact-scrollTo'){
 		var distanceTop = $('#'+identifier).offset().top;
 		$('html,body').animate({scrollTop: distanceTop},1000);
 	}
+});
+
+$('.contact-scrollTo').click(function(){
+	$('html,body').animate({scrollTop: $(document).height()},1000);
 });

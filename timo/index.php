@@ -35,9 +35,9 @@ get_header(); ?>
 				Problemen <em>oplossen</em> doe ik graag.
 			</p>
 			<p>
-				Momenteel werk ik bij <a href="">Big Impact.</a><br>
+				Momenteel werk ik bij <a href="http://www.bigimpact.com" target="_blank">Big Impact.</a><br>
 				Maar voor een <em>interessant project</em>,<br>
-				Kun je altijd <a href="">contact</a> met mij opnemen.
+				Kun je altijd <a class="contact-scrollTo" href="#">contact</a> met mij opnemen.
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>
