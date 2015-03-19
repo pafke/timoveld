@@ -1,5 +1,5 @@
 var waypoint = new Waypoint({
-	element: document.getElementById('voorstellen-trigger'),
+	element: document.getElementById('voorstellen-scrollTo'),
 	handler: function(direction) {
 		if(direction == 'down'){
 			$('.logofixed').fadeIn(500);

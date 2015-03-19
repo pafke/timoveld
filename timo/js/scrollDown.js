@@ -10,9 +10,9 @@ $('.mobilenav a').click(function(){
 	var identifier = $(this).attr('class');
 	
 	console.log(identifier);
-	if(identifier == 'top-trigger'){
+	if(identifier == 'top-scrollTo'){
 		$('html,body').animate({scrollTop: 0},1000);
-	}else if(identifier == 'contact-trigger'){
+	}else if(identifier == 'contact-scrollTo'){
 		$('html,body').animate({scrollTop: $(document).height()},1000);
 	}
 	else{
