@@ -17,7 +17,7 @@ var waypoint = new Waypoint({
 			$('.logofixed').fadeIn(500);
 			$('.icon').removeClass('black');
 		}else{
-			$('.logofixed').fadeOut(100);			
+			$('.logofixed').fadeOut(100);
 			$('.icon').addClass('black');
 		}
 	}
@@ -47,7 +47,7 @@ var skillset = new Waypoint({
 			$('.skillset .row:first .stars').css('visibility','visible').hide().animate({left:200, opacity:"show"}, 200, "linear", function() {
 				fadinstars($(this));
 			});
-			
+
 		}else{
 			$('.skillset .row .stars').css('visibility','hidden');
 		}

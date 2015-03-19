@@ -8,7 +8,7 @@
 				</p>
 			</div>
 		</section>
-		
+
 		<?php wp_footer(); ?>
 
 		<script>

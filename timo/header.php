@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
-	<head>		
+	<head>
 		<?php wp_head(); ?>
 	</head>
 	<body>
