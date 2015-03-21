@@ -40,10 +40,10 @@ get_header(); ?>
 				Kun je altijd <a class="contact-scrollTo" href="#">contact</a> met mij opnemen.
 			</p>
 			<p>
-				<a href="">Download mijn CV</a>
+				<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
 			</p>
 			<p>
-				<a href="nl.linkedin.com/in/timoveld" target="_blank" class="iconfont">&#xe801;</a>
+				<a href="http://nl.linkedin.com/in/timoveld" target="_blank" class="iconfont">&#xe801;</a>
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>
