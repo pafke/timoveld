@@ -28,6 +28,10 @@ a {
 	color: $maincolor;
 	text-decoration: none;
 }
+#logo {
+	width: 200px;
+	height: 200px;
+}
 .table {
 	display: table;
 }
@@ -84,10 +88,6 @@ a {
 .self {
 	width: 320px;
 }
-#logo {
-	width: 200px;
-	height: 200px;
-}
 .logofixed {
 	position: fixed;
 	left: 10px;
@@ -99,7 +99,7 @@ a {
 	width: 90px;
 	height: 90px;
 }
-/* Hamburger menu stylen */
+/* HAMBURGER MENU STYLEN */
 .menui {
 	background: $light;
 	transition: 0.6s ease;
@@ -186,7 +186,7 @@ a {
 	display: table-cell;
 	vertical-align: middle;
 }
-/* Masonry */
+/* MASONRY */
 #container {
   margin: 0 auto;
 }
@@ -225,7 +225,7 @@ a {
 	background: $light;
 	color: $maincolor;
 }
-/* Skillset */
+/* SKILLSET */
 .star {
 	font-family: 'fontello';
 	font-size: 38px;
@@ -249,7 +249,7 @@ a {
 	text-align: left;
 	line-height: 38px;
 }
-/* Contact formulier */
+/* CONTACT FORMULIER */
 .contact {
     background: repeating-linear-gradient(
 		45deg,
@@ -286,4 +286,7 @@ a {
 @import 'size_med';
 
 /* LARGE SIZE */
+@import 'size_large';
+
+/* OVERWRITES */
 @import 'size_large';

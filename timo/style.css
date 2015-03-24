@@ -24,7 +24,6 @@ time, mark, audio, video {
 html, body {
   height: 100%; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -82,6 +81,10 @@ a {
   color: #50ccb7;
   text-decoration: none; }
 
+#logo {
+  width: 200px;
+  height: 200px; }
+
 .table {
   display: table; }
 
@@ -138,10 +141,6 @@ a {
 .self {
   width: 320px; }
 
-#logo {
-  width: 200px;
-  height: 200px; }
-
 .logofixed {
   position: fixed;
   left: 10px;
@@ -153,7 +152,7 @@ a {
   width: 90px;
   height: 90px; }
 
-/* Hamburger menu stylen */
+/* HAMBURGER MENU STYLEN */
 .menui {
   background: #FFF;
   transition: 0.6s ease;
@@ -240,7 +239,7 @@ a {
   display: table-cell;
   vertical-align: middle; }
 
-/* Masonry */
+/* MASONRY */
 #container {
   margin: 0 auto; }
 
@@ -279,7 +278,7 @@ a {
   background: #FFF;
   color: #50ccb7; }
 
-/* Skillset */
+/* SKILLSET */
 .star {
   font-family: 'fontello';
   font-size: 38px; }
@@ -303,7 +302,7 @@ a {
   text-align: left;
   line-height: 38px; }
 
-/* Contact formulier */
+/* CONTACT FORMULIER */
 .contact {
   background: repeating-linear-gradient(45deg, #CC5065, #CC5065 20px, #ffffff 20px, #ffffff 40px, #58a9c9 40px, #58a9c9 60px, #ffffff 60px, #ffffff 80px);
   padding: 10px;
@@ -330,6 +329,14 @@ a {
   .centermsg {
     font-size: 64px; } }
 /* LARGE SIZE */
+@media (min-width: 960px) {
+  .centermsg {
+    font-size: 78px; }
+
+  #logo {
+    width: 250px;
+    height: 250px; } }
+/* OVERWRITES */
 @media (min-width: 960px) {
   .centermsg {
     font-size: 78px; }
