@@ -341,12 +341,7 @@ a {
     width: 250px;
     height: 250px; } }
 /* OVERWRITES */
-@media (min-width: 960px) {
-  .centermsg {
-    font-size: 78px; }
-
-  #logo {
-    width: 250px;
-    height: 250px; } }
+div.ppt, .pp_description {
+  display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
