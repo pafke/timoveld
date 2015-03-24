@@ -74,6 +74,10 @@ a {
 	content: "\A";
 	white-space: pre;
 }
+.iconfont {
+	font-family: 'fontello';
+	font-size: 30px;
+}
 .absolutecenter {
 	position: absolute;
 	width:100%;
@@ -231,11 +235,11 @@ a {
 	font-size: 38px;
 }
 .starfull::before {
-    content: "\e800";
+    content: "\e802";
 	margin-right: 10px;
 }
 .starempty::before {
-    content: "\e801";
+    content: "\e803";
 	margin-right: 10px;
 }
 .skillset {
