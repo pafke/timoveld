@@ -341,7 +341,7 @@ a {
     width: 250px;
     height: 250px; } }
 /* OVERWRITES */
-div.ppt, .pp_description {
+div.pp_details {
   display: none !important; }
 
 /*# sourceMappingURL=style.css.map */
