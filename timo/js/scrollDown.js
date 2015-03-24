@@ -3,7 +3,7 @@ $('#scrolldown').click(function(){
 });
 
 $('.mobilenav a').click(function(){
-	$(".mobilenav").fadeToggle(500);
+	$(".mobilenav").toggleClass("shownav");
 	$(".top-menu").toggleClass("top-animate");
 	$(".mid-menu").toggleClass("mid-animate");
 	$(".bottom-menu").toggleClass("bottom-animate");

@@ -13,9 +13,8 @@
 
 		<script>
 			$(document).ready(function () {
-				$(".mobilenav").hide();
-				$(".icon").click(function () {
-					$(".mobilenav").fadeToggle(500);
+				$('.icon').click(function () {
+					$(".mobilenav").toggleClass("shownav");
 					$(".top-menu").toggleClass("top-animate");
 					$(".mid-menu").toggleClass("mid-animate");
 					$(".bottom-menu").toggleClass("bottom-animate");
