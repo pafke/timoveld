@@ -85,6 +85,10 @@ a {
   width: 200px;
   height: 200px; }
 
+#scrolldown {
+  cursor: pointer;
+  cursor: hand; }
+
 .table {
   display: table; }
 
