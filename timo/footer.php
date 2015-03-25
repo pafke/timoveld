@@ -8,7 +8,7 @@
 				<?php
 				} else {
 				?>
-				<a href="#">T. 06 435 11 371</a>
+				<a href="javascript:void(0)">T. 06 435 11 371</a>
 				<?php
 				}
 				?>
