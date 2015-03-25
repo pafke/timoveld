@@ -282,6 +282,9 @@ a {
   margin-top: 15px;
   display: inline-block; }
 
+.toggleMenu .overlay {
+  transform: translatey(0); }
+
 /* SKILLSET */
 .star {
   font-family: 'fontello';

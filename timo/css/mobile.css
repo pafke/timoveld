@@ -1,5 +1,4 @@
-.item:hover .overlay,
-.toggleMenu .overlay {
+.item:hover .overlay {
   transform: translatey(0); }
 
 .overlay a:hover {
