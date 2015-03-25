@@ -33,17 +33,11 @@
 				});
 			});
 		</script>
-
-		<script>
-		  $(document).ready(function(){
-			$("a[rel^='prettyPhoto']").prettyPhoto({
-				show_title: false,
-				social_tools: false,
-				default_width: $(window).width(),
-				default_height: $(window).height(),
-				horizontal_padding: 0
-			});
-		  });
+		
+		<script type="text/javascript">
+			;( function( $ ) {
+				$( '.swipebox' ).swipebox();
+			} )( jQuery );
 		</script>
 
 		<script>

@@ -108,7 +108,7 @@ get_header(); ?>
 							$external = get_post_meta($post->ID, $key1, TRUE);
 							if($video != '') {?>
 
-							<a href="http://www.youtube.com/watch?v=<?php echo $video ?>" rel="prettyPhoto" title="<?php the_title(); ?>">
+							<a class="swipebox" href="http://www.youtube.com/watch?v=<?php echo $video ?>" title="<?php the_title(); ?>">
 								Bekijk video
 							</a>
 
@@ -127,7 +127,7 @@ get_header(); ?>
 							$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
 							?>
 
-							<a href="<?php echo $url; ?>"  rel="prettyPhoto" title="<?php the_title(); ?>">
+							<a class="swipebox" href="<?php echo $url; ?>" title="<?php the_title(); ?>">
 								Bekijk afbeelding
 							</a>
 
