@@ -211,8 +211,8 @@ a {
   height: 32px;
   width: 32px;
   margin: 0px;
-  top: 0;
-  right: 0;
+  top: 5px;
+  right: 10px;
 }
 
 .mobilenav {
