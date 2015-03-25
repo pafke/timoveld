@@ -89,7 +89,7 @@ get_header(); ?>
 		<section class="content" id="werk-scrollTo">
 			<h2>Werk</h2>
 			<div id="container">
-			<?php $query = new WP_Query( 'cat=6'.'&orderby=rand'); ?>
+			<?php $query = new WP_Query( 'cat=3'.'&orderby=rand'); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 				<div class="item">
