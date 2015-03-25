@@ -19,44 +19,7 @@
 			</div>
 		</section>
 
-		<?php wp_footer(); ?>
-
-		<script>
-			$(document).ready(function () {
-				$('.icon').click(function () {
-					$(".mobilenav").toggleClass("shownav");
-					$(".top-menu").toggleClass("top-animate");
-					$(".mid-menu").toggleClass("mid-animate");
-					$(".bottom-menu").toggleClass("bottom-animate");
-				});
-			});
-		</script>
-
-		<script>
-			$(document).ready(function () {
-				var $container = $('#container');
-				// initialize
-				$container.masonry({
-					isFitWidth: true,
-					gutter: 25,
-					itemSelector: '.item'
-				});
-			});
-		</script>
-		
-		<script type="text/javascript">
-			;( function( $ ) {
-				$( '.swipebox' ).swipebox();
-			} )( jQuery );
-		</script>
-
-		<script>
-			$(document).ready(function(){
-				$.typer.options.typeSpeed = 120;
-				$.typer.options.typerInterval = 4000;
-				$('[data-typer-targets]').typer();
-			});
-		</script>
+		<?php wp_footer(); ?>		
 
 		<?php
 		if ( wp_is_mobile() ) {
