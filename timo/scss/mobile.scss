@@ -1,0 +1,10 @@
+@import 'variables';
+
+.item:hover .overlay,
+.toggleMenu .overlay {
+	transform: translatey(0);
+}
+.overlay a:hover {
+	background: $light;
+	color: $maincolor;
+}

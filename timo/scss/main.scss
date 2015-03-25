@@ -221,10 +221,6 @@ a {
 	display: table;
 	padding: 25px;
 }
-.item:hover .overlay,
-.toggleMenu .overlay {
-	transform: translatey(0);
-}
 .overlay a {
 	background: none;
 	border: solid 2px $light;
@@ -233,10 +229,7 @@ a {
 	margin-top: 15px;
 	display: inline-block;
 }
-.overlay a:hover {
-	background: $light;
-	color: $maincolor;
-}
+
 /* SKILLSET */
 .star {
 	font-family: 'fontello';

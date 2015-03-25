@@ -274,10 +274,6 @@ a {
   display: table;
   padding: 25px; }
 
-.item:hover .overlay,
-.toggleMenu .overlay {
-  transform: translatey(0); }
-
 .overlay a {
   background: none;
   border: solid 2px #FFF;
@@ -285,10 +281,6 @@ a {
   color: #FFF;
   margin-top: 15px;
   display: inline-block; }
-
-.overlay a:hover {
-  background: #FFF;
-  color: #50ccb7; }
 
 /* SKILLSET */
 .star {
