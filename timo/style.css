@@ -150,7 +150,7 @@ a {
   left: 10px;
   top: 10px;
   display: none;
-  z-index: 999; }
+  z-index: 99; }
 
 .logofixed svg {
   width: 90px;
