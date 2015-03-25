@@ -97,10 +97,8 @@ get_header(); ?>
 					<div class="overlay">
 						<div class="cell">
 
-							<h3><?php the_title();?></h3>
-							<p>
-								<?php the_content(); ?>
-							</p>
+							<h3><?php the_title();?></h3>							
+							<?php the_content(); ?>							
 							<?php
 							$key = 'video';
 							$key1 = 'external';
