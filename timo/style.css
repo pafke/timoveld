@@ -304,26 +304,27 @@ a {
 /* SKILLSET */
 .star {
   font-family: 'fontello';
-  font-size: 38px; }
+  font-size: 26px;
+  width: 10%;
+  display: inline-block;
+  text-align: center; }
 
 .starfull::before {
-  content: "\e802";
-  margin-right: 10px; }
+  content: "\e802"; }
 
 .starempty::before {
-  content: "\e803";
-  margin-right: 10px; }
+  content: "\e803"; }
 
 .skillset {
   border: solid 4px #FFF;
   padding: 25px;
   width: 80%;
   margin: 10px auto 0 auto;
-  font-size: 120%; }
+  font-size: 20px; }
 
 .skillset .cell {
   text-align: left;
-  line-height: 38px; }
+  line-height: 26px; }
 
 /* CONTACT FORMULIER */
 .contact {
@@ -350,15 +351,30 @@ a {
 /* MEDIUM SIZE */
 @media (min-width: 640px) {
   .centermsg {
-    font-size: 64px; } }
+    font-size: 64px; }
+
+  .star {
+    font-size: 26px; }
+
+  .skillset .cell {
+    line-height: 26px; } }
 /* LARGE SIZE */
 @media (min-width: 960px) {
+  #logo {
+    width: 250px;
+    height: 250px; }
+
   .centermsg {
     font-size: 78px; }
 
-  #logo {
-    width: 250px;
-    height: 250px; } }
+  .star {
+    font-size: 50px; }
+
+  .skillset .cell {
+    line-height: 50px; }
+
+  .skillset {
+    font-size: 32px; } }
 /* OVERWRITES */
 div.pp_details {
   display: none !important; }

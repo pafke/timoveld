@@ -1,9 +1,18 @@
 @media (min-width: 960px) {
-	.centermsg {
-		font-size: 78px;
-	}
 	#logo {
 		width: 250px;
 		height: 250px;
 	}
+	.centermsg {
+		font-size: 78px;
+	}
+	.star {
+		font-size: 50px;
+	}
+	.skillset .cell {
+		line-height: 50px;
+	}
+	.skillset {
+		font-size: 32px;
+	}	
 }

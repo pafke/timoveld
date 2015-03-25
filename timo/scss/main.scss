@@ -34,7 +34,7 @@ a {
 }
 #scrolldown {
 	cursor: pointer;
-	cursor: hand;	
+	cursor: hand;
 }
 .table {
 	display: table;
@@ -251,26 +251,27 @@ a {
 /* SKILLSET */
 .star {
 	font-family: 'fontello';
-	font-size: 38px;
+	font-size: 26px;
+	width: 10%;
+	display: inline-block;
+	text-align: center;
 }
 .starfull::before {
     content: "\e802";
-	margin-right: 10px;
 }
 .starempty::before {
     content: "\e803";
-	margin-right: 10px;
 }
 .skillset {
 	border: solid 4px $light;
 	padding: 25px;
 	width: 80%;
 	margin: 10px auto 0 auto;
-	font-size: 120%;
+	font-size: 20px;
 }
 .skillset .cell {
 	text-align: left;
-	line-height: 38px;
+	line-height: 26px;
 }
 /* CONTACT FORMULIER */
 .contact {
