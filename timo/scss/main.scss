@@ -221,13 +221,25 @@ a {
 	display: table;
 	padding: 25px;
 }
-.overlay a {
+.overlay a,
+.buttonLight {
 	background: none;
 	border: solid 2px $light;
 	padding: 15px;
 	color: $light;
 	margin-top: 15px;
 	display: inline-block;
+}
+.buttonLight {
+	background: $light;
+	border: solid 2px $maincolor;
+	color: $maincolor;
+	margin: 5px 0;
+}
+.buttonLight:hover {
+	background: $maincolor;
+	border-color: $maincolor;
+	color: $light;
 }
 .toggleMenu .overlay {
 	transform: translatey(0);

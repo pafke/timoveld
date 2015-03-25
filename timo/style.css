@@ -274,13 +274,25 @@ a {
   display: table;
   padding: 25px; }
 
-.overlay a {
+.overlay a,
+.buttonLight {
   background: none;
   border: solid 2px #FFF;
   padding: 15px;
   color: #FFF;
   margin-top: 15px;
   display: inline-block; }
+
+.buttonLight {
+  background: #FFF;
+  border: solid 2px #50ccb7;
+  color: #50ccb7;
+  margin: 5px 0; }
+
+.buttonLight:hover {
+  background: #50ccb7;
+  border-color: #50ccb7;
+  color: #FFF; }
 
 .toggleMenu .overlay {
   transform: translatey(0); }
