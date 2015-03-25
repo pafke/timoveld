@@ -4,7 +4,7 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-		<div class="mobilenav">
+		<nav class="mobilenav">
 			<ul>
 				<li><a class="top-scrollTo" href="#">Wij staan bovenaan</a></li>
 				<li><a class="voorstellen-scrollTo" href="#">Even voorstellen</a></li>
@@ -12,7 +12,7 @@
 				<li><a class="werk-scrollTo" href="#">Werk</a></li>
 				<li><a class="contact-scrollTo" href="#">Contact</a></li>
 			</ul>
-		</div>
+		</nav>
 
 		<a href="javascript:void(0)" class="icon">
 			<div class="hamburger">
