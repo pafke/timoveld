@@ -43,7 +43,10 @@ get_header(); ?>
 				<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
 			</p>
 			<p>
-				<a href="http://nl.linkedin.com/in/timoveld" target="_blank" class="iconfont">&#xe801;</a>
+				<a href="http://nl.linkedin.com/in/timoveld" target="_blank" class="iconfont">&#xe807;</a>
+			</p>
+			<p>
+				<a href="http://stackoverflow.com/users/3008011/user3008011" target="_blank" class="iconfont">&#xe806;</a>
 			</p>
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
 		</section>
