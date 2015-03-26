@@ -65,7 +65,7 @@ get_header(); ?>
 				<?php
 					$args = array(
 						'post_type' => 'skill',
-						'order'   => 'DESC'
+						'order'   => 'ASC'
 					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
