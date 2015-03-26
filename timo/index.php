@@ -63,7 +63,10 @@ get_header(); ?>
 			<div class="table skillset" id="skilltrigger">
 
 				<?php
-					$args = array( 'post_type' => 'skill');
+					$args = array(
+						'post_type' => 'skill',
+						'order'   => 'DESC'
+					);
 					$loop = new WP_Query( $args );
 					while ( $loop->have_posts() ) : $loop->the_post();
 					$skillkey = 'skill_meta';
@@ -97,8 +100,8 @@ get_header(); ?>
 					<div class="overlay">
 						<div class="cell">
 
-							<h3><?php the_title();?></h3>							
-							<?php the_content(); ?>							
+							<h3><?php the_title();?></h3>
+							<?php the_content(); ?>
 							<?php
 							$key = 'video';
 							$key1 = 'external';
