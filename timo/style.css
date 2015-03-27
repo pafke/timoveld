@@ -195,8 +195,7 @@ a {
 
 .mobilenav li {
   list-style-type: none;
-  text-align: center;
-  padding: 25px; }
+  text-align: center; }
 
 .mobilenav li a {
   font-size: 200%;
