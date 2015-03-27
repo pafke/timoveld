@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="nl">
 	<head>
-		<link rel='stylesheet' id='folder-style-css' href='<?php echo get_template_directory(); ?>style.css' type='text/css' media='all' />
+		<link rel='stylesheet' id='folder-style-css' href='<?php echo get_template_directory(); ?>/style.css' type='text/css' media='all' />
 	</head>
 	<body>
 		<section class="fullscreen table maincolorBG">
