@@ -151,6 +151,23 @@ a {
 	text-decoration: none;
 	font-weight: 400;
 	width: 100%;
+	padding-top: 25px;
+	display: inline-block;
+	position: relative;
+}
+.mobilenav li a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.mobilenav li a:hover:after {
+	width: 80%;
+	background: $light;
 }
 .shownav {
 	visibility:visible;
