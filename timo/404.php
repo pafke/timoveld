@@ -5,7 +5,7 @@
 		<link rel='stylesheet' id='fonts' href='http://fonts.googleapis.com/css?family=Raleway:700,800,100,400,200,300' type='text/css' media='all' />
 	</head>
 	<body>
-		<section class="fullscreen table maincolorBG">
+		<section class="fullscreen maincolorBG">
 			<div class="centermsg">
 				<span class="forcebreak">404</span>
 				Page not found!
