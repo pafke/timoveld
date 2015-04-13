@@ -5,7 +5,7 @@ get_header(); ?>
 
 
 				I <span class="forcebreak" data-typer-targets="Create,Develop,Render,Design,Debug,Visualise,Animate">Design</span>
-				therefor I am.
+				therefore I am.
 				<br>
 				<svg id="logo" version="1.1" viewBox="0 0 290 290"  >
 					<g>
