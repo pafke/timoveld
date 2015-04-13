@@ -1,9 +1,7 @@
 <?php
 get_header(); ?>
-		<section class="fullscreen table maincolorBG">
+		<section class="fullscreen maincolorBG">
 			<div class="centermsg">
-
-
 				I <span class="forcebreak" data-typer-targets="Create,Develop,Render,Design,Debug,Visualise,Animate">Design</span>
 				therefore I am.
 				<br>
@@ -37,7 +35,7 @@ get_header(); ?>
 			<p>
 				Momenteel werk ik bij <a href="http://www.bigimpact.com" target="_blank">Big Impact.</a><br>
 				Maar voor een <em>interessant project</em>,<br>
-				Kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
+				kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
 			</p>
 			<p>
 				<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
