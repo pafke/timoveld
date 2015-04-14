@@ -1,5 +1,5 @@
 		<section class="content contact">
-			<div class="contactform">
+			<div class="contactform" id="contact">
 				<h2>Contact</h2>
 				<?php
 				if ( wp_is_mobile() ) {

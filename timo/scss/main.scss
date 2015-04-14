@@ -71,9 +71,16 @@ a {
 	font-size: 48px;
 	display: table-cell;
 	vertical-align: middle;
-}
-.centermsg span {
-	font-weight: 400;
+	a {
+		color: #FFF;
+		display: block;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+	span {
+		font-weight: 400;
+	}
 }
 .forcebreak:after {
 	content: "\A";
