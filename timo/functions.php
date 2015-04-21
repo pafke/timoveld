@@ -9,7 +9,7 @@
  * Enqueue scripts and styles.
  */
 add_theme_support( 'post-thumbnails' );
-add_image_size( 'portfolio-small', 520, 390, true );
+add_image_size( 'portfolio-small', 400, 300, true );
 function themes() {
 	wp_enqueue_style( 'folder-style', get_stylesheet_uri() );
 	if (! wp_is_mobile() ) {
