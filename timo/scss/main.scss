@@ -36,6 +36,9 @@ a {
 	cursor: pointer;
 	cursor: hand;
 }
+.clear {
+	clear: both;
+}
 .table {
 	display: table;
 }
@@ -176,6 +179,13 @@ a {
 	width: 80%;
 	background: $light;
 }
+.hamburger {
+	width: 50px;
+	height: 50px;
+	right: 10px;
+	top: 5px;
+	position: absolute;
+}
 .shownav {
 	visibility:visible;
 	opacity:0.9;
@@ -197,24 +207,24 @@ a {
 	transform: rotate(-225deg);
 }
 .top-menu {
-	top: 5px;
-	width: 25px;
-	height: 2px;
-	border-radius: 10px;
+	top: 5px*2-10;
+	width: 25px*2;
+	height: 2px*2;
+	border-radius: 10px*2;
 	background-color: $light;
 }
 .mid-menu {
-	top: 13px;
-	width: 25px;
-	height: 2px;
-	border-radius: 10px;
+	top: 13px*2-10;
+	width: 25px*2;
+	height: 2px*2;
+	border-radius: 10px*2;
 	background-color: $light;
 }
 .bottom-menu {
-	top: 21px;
-	width: 25px;
-	height: 2px;
-	border-radius: 10px;
+	top: 21px*2-10;
+	width: 25px*2;
+	height: 2px*2;
+	border-radius: 10px*2;
 	background-color: $light;
 }
 .black .top-menu,
