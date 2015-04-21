@@ -26,6 +26,7 @@ add_action( 'wp_enqueue_scripts', 'themes' );
 
 function blog_favicon() { ?>
 	<link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/favicon.ico" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php }
 add_action('wp_head', 'blog_favicon');
 
