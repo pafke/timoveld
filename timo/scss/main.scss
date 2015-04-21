@@ -91,7 +91,9 @@ a {
 }
 .iconfont {
 	font-family: 'fontello';
-	font-size: 30px;
+	font-size: 36px;
+	margin-top: 15px;
+	display: inline-block;
 }
 .absolutecenter {
 	position: absolute;
@@ -273,7 +275,6 @@ a {
 	background: $light;
 	border: solid 2px $maincolor;
 	color: $maincolor;
-	margin: 5px 0;
 }
 .buttonLight:hover {
 	background: $maincolor;
