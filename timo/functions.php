@@ -26,7 +26,7 @@ add_action( 'wp_enqueue_scripts', 'themes' );
 
 function add_header_data() { ?>
 	<link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/favicon.ico" >
-	<meta name="viewport" content="width=device-width">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <?php }
 add_action('wp_head', 'add_header_data');
 
@@ -35,14 +35,12 @@ function theme_name_scripts() {
 	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", false, null);
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.min.js', '', '', false);
-
 	wp_enqueue_script( 'scrollDown', get_template_directory_uri() . '/js/scrollDown.js', '', '', true);
 	wp_enqueue_script( 'jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.js', '', '', true);
 	wp_enqueue_script( 'waypoint-scrollTos', get_template_directory_uri() . '/js/waypoint.triggers.js', '', '', true);
 	wp_enqueue_script( 'typer-plugin', get_template_directory_uri() . '/js/jquery.typer.js', '', '', true);
 	wp_enqueue_script( 'swipebox', get_template_directory_uri() . '/js/jquery.swipebox.min.js', '', '', true);
 	wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', '', '', true);
-
 }
 add_action( 'wp_enqueue_scripts', 'theme_name_scripts' );
 
