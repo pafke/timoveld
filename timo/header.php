@@ -4,7 +4,6 @@
 		<?php wp_head(); ?>
 	</head>
 	<body>
-	<!-- test -->
 		<nav class="mobilenav">
 			<ul>
 				<li><a class="top-scrollTo" href="javascript:void(0)">Wij staan bovenaan</a></li>

@@ -24,11 +24,11 @@ function themes() {
 }
 add_action( 'wp_enqueue_scripts', 'themes' );
 
-function blog_favicon() { ?>
+function add_header_data() { ?>
 	<link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/favicon.ico" >
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width">
 <?php }
-add_action('wp_head', 'blog_favicon');
+add_action('wp_head', 'add_header_data');
 
 function theme_name_scripts() {
 	wp_deregister_script('jquery');
