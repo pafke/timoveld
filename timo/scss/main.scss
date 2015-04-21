@@ -181,13 +181,6 @@ a {
 	width: 80%;
 	background: $light;
 }
-.hamburger {
-	width: 50px;
-	height: 50px;
-	right: 10px;
-	top: 5px;
-	position: absolute;
-}
 .shownav {
 	visibility:visible;
 	opacity:0.9;
@@ -208,25 +201,32 @@ a {
 	-webkit-transform: rotate(-225deg);
 	transform: rotate(-225deg);
 }
+.hamburger {
+	width: 25px;
+	height: 25px;
+	right: 5px;
+	top: 0;
+	position: absolute;
+}
 .top-menu {
-	top: 5px*2-10;
-	width: 25px*2;
-	height: 2px*2;
-	border-radius: 10px*2;
+	top: 5px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
 	background-color: $light;
 }
 .mid-menu {
-	top: 13px*2-10;
-	width: 25px*2;
-	height: 2px*2;
-	border-radius: 10px*2;
+	top: 13px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
 	background-color: $light;
 }
 .bottom-menu {
-	top: 21px*2-10;
-	width: 25px*2;
-	height: 2px*2;
-	border-radius: 10px*2;
+	top: 21px;
+	width: 25px;
+	height: 2px;
+	border-radius: 10px;
 	background-color: $light;
 }
 .black .top-menu,
