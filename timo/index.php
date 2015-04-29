@@ -74,12 +74,11 @@ get_header(); ?>
 					$skill = get_post_meta($post->ID, $skillkey, TRUE);
 				?>
 
-				<div class="row" style="height:100%;">
+				<div class="row"">
 					<div class="skillname">
 						<?php the_title(); ?>
 					</div>
-					<div class="skilllevel" style="height:100%;  padding: 5px 0;">
-						<div style="width:<?php echo ($skill*10); ?>%;"></div>
+					<div class="skilllevel" style="width:<?php echo ($skill*10); ?>%;">						
 					</div>
 				</div>
 

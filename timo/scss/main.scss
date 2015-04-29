@@ -292,13 +292,9 @@ a {
 	text-align: left;
 }
 .skilllevel {
-	display: table-cell;
-	width: 60%;
-}
-.skilllevel div {
 	display: block;
-	width: 100%;
-	height: 100%;
+	height: 18px;
+	width: 60%;
 	background: $light;
 }
 .skillset {
