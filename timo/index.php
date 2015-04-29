@@ -74,12 +74,12 @@ get_header(); ?>
 					$skill = get_post_meta($post->ID, $skillkey, TRUE);
 				?>
 
-				<div class="row">
-					<div class="cell">
+				<div class="row" style="height:100%;">
+					<div class="skillname">
 						<?php the_title(); ?>
 					</div>
-					<div class="cell stars">
-						<?php echo str_repeat("<span class='star starfull'></span>", $skill); ?><?php echo str_repeat("<span class='star starempty'></span>", (10-$skill)); ?>
+					<div class="skilllevel" style="height:100%;  padding: 5px 0;">
+						<div style="width:<?php echo ($skill*10); ?>%;"></div>
 					</div>
 				</div>
 

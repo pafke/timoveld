@@ -286,18 +286,19 @@ a {
 	transform: translatey(0);
 }
 /* SKILLSET */
-.star {
-	font-family: 'fontello';
-	font-size: 26px;
-	width: 10%;
-	display: inline-block;
-	text-align: center;
+.skillname {
+	display: table-cell;
+	width: 40%;
 }
-.starfull::before {
-    content: "\e802";
+.skilllevel {
+	display: table-cell;
+	width: 60%;
 }
-.starempty::before {
-    content: "\e803";
+.skilllevel div {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: $light;
 }
 .skillset {
 	border: solid 4px $light;
@@ -305,6 +306,7 @@ a {
 	width: 80%;
 	margin: 25px auto 0 auto;
 	font-size: 20px;
+	
 }
 .skillset .cell {
 	text-align: left;
