@@ -289,6 +289,7 @@ a {
 .skillname {
 	display: table-cell;
 	width: 40%;
+	text-align: left;
 }
 .skilllevel {
 	display: table-cell;
@@ -305,7 +306,7 @@ a {
 	padding: 25px;
 	width: 80%;
 	margin: 25px auto 0 auto;
-	font-size: 20px;
+	font-size: 16px;
 	
 }
 .skillset .cell {
