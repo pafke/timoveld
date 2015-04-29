@@ -1,4 +1,4 @@
-@media (min-width: 721px) {
+@media (min-width: 450px) {
 	.centermsg {
 		font-size: 64px;
 	}
@@ -35,5 +35,12 @@
 		height: 2px*2;
 		border-radius: 10px*2;
 		background-color: $light;
+	}
+	.content {
+		padding: 50px 25px;
+	}
+	.item {
+		width: 400px;
+		height: 300px;
 	}
 }
