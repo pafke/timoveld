@@ -9,14 +9,12 @@
 	.star {
 		font-size: 40px;
 	}
-	.skillset .cell {
-		line-height: 40px;
-	}
 	.skillset {
 		font-size: 28px;
-	}
-	.skillset {
 		width: 60%;
+		.cell {
+			line-height: 40px;
+		}
 	}
 	.skilllevel {
 		height: 30px;

@@ -52,17 +52,17 @@ a {
 .maincolorBG {
 	background: $maincolor;
 	color: $light;
-}
-.maincolorBG h2 {
-	color: $light;
+	h2 {
+		color: $light;
+	}
 }
 .fullscreen {
 	width: 100%;
 	height: 100%;
 	display: table;
-}
-.fullscreen svg{
-	margin-top: 25px;
+	svg{
+		margin-top: 25px;
+	}
 }
 .content {
 	text-align:center;
@@ -115,10 +115,10 @@ a {
 	top: 10px;
 	display: none;
 	z-index: 99;
-}
-.logofixed img {
-	width: 50px;
-	height: 50px;
+	img {
+		width: 50px;
+		height: 50px;
+	}
 }
 /* MENU STYLEN */
 .menui {
@@ -152,34 +152,34 @@ a {
 	visibility:hidden;
 	opacity:0;
 	transition:visibility 0s linear 0.3s,opacity 0.3s linear;
-}
-.mobilenav li {
-	list-style-type: none;
-	text-align: center;
-}
-.mobilenav li a {
-	font-size: 200%;
-	color: $light;
-	text-decoration: none;
-	font-weight: 400;
-	width: 100%;
-	padding-top: 25px;
-	display: inline-block;
-	position: relative;
-}
-.mobilenav li a:after {
-	content: '';
-	display: block;
-	margin: auto;
-	margin-top: 25px;
-	height: 3px;
-	width: 0px;
-	background: transparent;
-	transition: width .5s ease, background-color .5s ease;
-}
-.mobilenav li a:hover:after {
-	width: 80%;
-	background: $light;
+	li {
+		list-style-type: none;
+		text-align: center;
+		a {
+			font-size: 200%;
+			color: $light;
+			text-decoration: none;
+			font-weight: 400;
+			width: 100%;
+			padding-top: 25px;
+			display: inline-block;
+			position: relative;
+		}
+		a:after {
+			content: '';
+			display: block;
+			margin: auto;
+			margin-top: 25px;
+			height: 3px;
+			width: 0px;
+			background: transparent;
+			transition: width .5s ease, background-color .5s ease;
+		}
+		a:hover:after {
+			width: 80%;
+			background: $light;
+		}
+	}
 }
 .shownav {
 	visibility:visible;
@@ -305,16 +305,19 @@ a {
 	margin: 25px auto 0 auto;
 	font-size: 14px;
 	position: relative;
-}
-.skillset .cell {
-	text-align: left;
-	line-height: 26px;
-}
-.skillset .row {
-	display: none;
-}
-.skillset .row:nth-child(-n+5){
-	display: table-row;
+	.cell {
+		text-align: left;
+		line-height: 26px;
+	}
+	.row {
+		display: none;
+	}
+	.row:nth-child(-n+5){
+		display: table-row;
+	}
+	.show {
+		display: table-row;
+	}
 }
 .showmore {
 	display: block;
@@ -322,9 +325,6 @@ a {
 	color: $light;
 	font-size: 14px;
 	margin-top: 15px;	
-}
-.skillset .show {
-	display: table-row;
 }
 /* CONTACT FORMULIER */
 .content.contact {
@@ -346,17 +346,17 @@ a {
 	padding: 50px;
 	background: #f0f0f0;
 	text-align: left;
-}
-.contactform a {
-	clear: left;
-	font-size: 24px;
-}
-.contactform a:after {
-	content:"\A";
-	white-space:pre;
-}
-.contactform h2 {
-	color: #444;
+	a {
+		clear: left;
+		font-size: 24px;
+	}
+	a:after {
+		content:"\A";
+		white-space:pre;
+	}
+	h2 {
+		color: #444;
+	}
 }
 
 /* MEDIUM SIZE */
