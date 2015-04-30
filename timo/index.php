@@ -78,7 +78,8 @@ get_header(); ?>
 					<div class="skillname">
 						<?php the_title(); ?>
 					</div>
-					<div class="skilllevel" style="width:<?php echo ($skill*10); ?>%;">						
+					<div class="skilllevel" data-skilllvl="<?php echo ($skill*10); ?>">
+					
 					</div>
 				</div>
 
