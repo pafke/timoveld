@@ -47,4 +47,3 @@ var skillset = new Waypoint({
 		}
 	}
 });
-
