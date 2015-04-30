@@ -31,6 +31,17 @@ $(document).ready(function(){
 	$('[data-typer-targets]').typer();
 });
 
+/* Toon alle skills toggle */
+$('.showmore').click(function(){
+	if($('.skillset .show').length){
+		$('.show').removeClass('show');
+		$(this).html('Toon alles');
+	}else{
+		$(this).parent().find('.row:hidden').addClass('show');
+		$(this).html('Toon minder');
+	}
+});
+
 /* Analytics */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

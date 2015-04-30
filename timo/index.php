@@ -61,32 +61,33 @@ get_header(); ?>
 				Een <em>overzicht</em> van mijn <em>skillset</em>
 			</p>
 
-			<div class="table skillset" id="skilltrigger">
+			<div class="skillset" id="skilltrigger">
+				<div class="skilltable">
+					<?php
+						$args = array(
+							'post_type' => 'skill',
+							'order'   => 'ASC'
+						);
+						$loop = new WP_Query( $args );
+						while ( $loop->have_posts() ) : $loop->the_post();
+						$skillkey = 'skill_meta';
+						$skill = get_post_meta($post->ID, $skillkey, TRUE);
+					?>
 
-				<?php
-					$args = array(
-						'post_type' => 'skill',
-						'order'   => 'ASC'
-					);
-					$loop = new WP_Query( $args );
-					while ( $loop->have_posts() ) : $loop->the_post();
-					$skillkey = 'skill_meta';
-					$skill = get_post_meta($post->ID, $skillkey, TRUE);
-				?>
+					<div class="row">
+						<div class="skillname">
+							<?php the_title(); ?>
+						</div>
+						<div class="skilllevel" data-skilllvl="<?php echo ($skill*10); ?>">
+						
+						</div>
+					</div>
 
-				<div class="row"">
-					<div class="skillname">
-						<?php the_title(); ?>
-					</div>
-					<div class="skilllevel" data-skilllvl="<?php echo ($skill*10); ?>">
-					
-					</div>
+					<?php
+						endwhile;
+					?>
 				</div>
-
-				<?php
-					endwhile;
-				?>
-
+				<a class="showmore" href="javascript:void(0)">Toon alles</a>
 			</div>
 		</section>
 

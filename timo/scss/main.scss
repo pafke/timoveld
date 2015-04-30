@@ -286,6 +286,10 @@ a {
 	transform: translatey(0);
 }
 /* SKILLSET */
+.skilltable {
+	display: table;
+	width: 100%;
+}
 .skillname {
 	display: table-cell;
 	width: 40%;
@@ -303,11 +307,27 @@ a {
 	width: 80%;
 	margin: 25px auto 0 auto;
 	font-size: 14px;
-	
+	position: relative;
 }
 .skillset .cell {
 	text-align: left;
 	line-height: 26px;
+}
+.skillset .row {
+	display: none;
+}
+.skillset .row:nth-child(-n+5){
+	display: table-row;
+}
+.showmore {
+	display: block;
+	text-align: right;
+	color: $light;
+	font-size: 14px;
+	margin-top: 15px;	
+}
+.skillset .show {
+	display: table-row;
 }
 /* CONTACT FORMULIER */
 .contact {
