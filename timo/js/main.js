@@ -33,11 +33,11 @@ $(document).ready(function(){
 
 /* Toon alle skills toggle */
 $('.showmore').click(function(){
-	if($('.skillset .show').length){
-		$('.show').removeClass('show');
+	if($('.skillset .clickedshow').length){
+		$('.clickedshow').fadeOut().removeClass('clickedshow');
 		$(this).html('Toon alles');
 	}else{
-		$(this).parent().find('.row:hidden').addClass('show');
+		$(this).parent().find('.row:hidden').hide().fadeIn().css('display','table-row').addClass('clickedshow');
 		$(this).html('Toon minder');
 	}
 });

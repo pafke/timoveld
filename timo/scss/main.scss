@@ -312,10 +312,7 @@ a {
 	.row {
 		display: none;
 	}
-	.row:nth-child(-n+5){
-		display: table-row;
-	}
-	.show {
+	.row:nth-child(-n+2){
 		display: table-row;
 	}
 }
@@ -324,7 +321,7 @@ a {
 	text-align: right;
 	color: $light;
 	font-size: 14px;
-	margin-top: 15px;	
+	margin-top: 15px;
 }
 /* CONTACT FORMULIER */
 .content.contact {
