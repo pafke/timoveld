@@ -312,7 +312,7 @@ a {
 	.row {
 		display: none;
 	}
-	.row:nth-child(-n+2){
+	.row:nth-child(-n+5){
 		display: table-row;
 	}
 }
