@@ -18,7 +18,7 @@ get_header(); ?>
 				</svg>
 			</div>
 			<div class="absolutecenter">
-				<img id="scrolldown" src="<?php echo get_template_directory_uri(); ?>/img/godown.svg">
+				<img id="scrolldown" src="<?php echo get_template_directory_uri(); ?>/img/godown.svg" alt="downarrow">
 			</div>
 		</section>
 
@@ -46,7 +46,7 @@ get_header(); ?>
 			<p>
 				<a href="http://stackoverflow.com/users/3008011/user3008011" target="_blank" class="iconfont">&#xe806;</a>
 			</p>
-			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self" alt="timoveld">
 		</section>
 
 		<section class="content maincolorBG" id="skillset-scrollTo">

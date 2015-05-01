@@ -2,6 +2,7 @@
 <html lang="nl">
 	<head>		
 		<?php wp_head(); ?>
+		<title><?php echo get_bloginfo('name'); ?></title>
 	</head>
 	<body>
 		<nav class="mobilenav">
@@ -23,5 +24,5 @@
 		</a>
 
 		<div class="logofixed">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo_TV.svg">
+			<img src="<?php echo get_template_directory_uri(); ?>/img/logo_TV.svg" alt="logo_timoveld">
 		</div>
