@@ -3,10 +3,9 @@ $('#scrolldown').click(function(){
 });
 
 $('.mobilenav a').click(function(){
-	$(".mobilenav").toggleClass("shownav");
-	$(".top-menu").toggleClass("top-animate");
-	$(".mid-menu").toggleClass("mid-animate");
-	$(".bottom-menu").toggleClass("bottom-animate");
+	$('.material--burger').toggleClass('material--arrow');
+	$('.mobilenav').toggleClass('menuactive');
+	$('.fulloverlay').fadeToggle();
 	var identifier = $(this).attr('class');
 
 	console.log(identifier);
