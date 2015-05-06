@@ -259,11 +259,15 @@ $z-index-navigation-inner: $z-index-navigation-button + 25;
 	position: absolute;
 	right: -300px;
 	top: $nav-size;
-	padding: 20px;
+	padding: 20px 40px;
 	height: 100%;
 	-webkit-transition: right 1s; /* Safari */
     transition: right 1s;
 	z-index: 2;
+	li a{
+		padding: 20px 0;
+		display: block;
+	}
 }
 .navcontainer {
 	position: fixed;
