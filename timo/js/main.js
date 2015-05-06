@@ -1,11 +1,7 @@
 /* Menu tonen/hiden */
-$(document).ready(function () {
-	$('.icon').click(function () {
-		$(".mobilenav").toggleClass("shownav");
-		$(".top-menu").toggleClass("top-animate");
-		$(".mid-menu").toggleClass("mid-animate");
-		$(".bottom-menu").toggleClass("bottom-animate");
-	});
+$('.material--burger').on('click', function() {
+	$(this).toggleClass('material--arrow');
+	$('.mobilenav').toggleClass('menuactive');
 });
 
 /* Portfolio items sorteren */
