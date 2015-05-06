@@ -5,6 +5,7 @@
 		<title><?php echo get_bloginfo('name'); ?></title>
 	</head>
 	<body>
+		<div class="fulloverlay"></div>
 		<div class="navcontainer">
 			<div class="material--burger">
 				<span></span>

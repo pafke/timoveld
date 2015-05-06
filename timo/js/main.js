@@ -2,7 +2,7 @@
 $('.material--burger').on('click', function() {
 	$(this).toggleClass('material--arrow');
 	$('.mobilenav').toggleClass('menuactive');
-	$('.navcontainer').toggleClass('fullheight');
+	$('.fulloverlay').fadeToggle();
 });
 
 /* Portfolio items sorteren */
