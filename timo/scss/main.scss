@@ -262,8 +262,8 @@ $z-index-navigation-inner: $z-index-navigation-button + 25;
 	top: $nav-size+10;
 	padding: 20px 40px;
 	height: 100%;
-	-webkit-transition: right 1s;
-    transition: right 1s;
+	-webkit-transition: right $animation-time;
+    transition: right $animation-time;
 	z-index: 2;
 	li a{
 		padding: 20px 0;
