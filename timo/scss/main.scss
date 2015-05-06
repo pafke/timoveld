@@ -261,12 +261,38 @@ $z-index-navigation-inner: $z-index-navigation-button + 25;
 	top: $nav-size;
 	padding: 20px 40px;
 	height: 100%;
-	-webkit-transition: right 1s; /* Safari */
+	-webkit-transition: right 1s;
     transition: right 1s;
 	z-index: 2;
 	li a{
 		padding: 20px 0;
 		display: block;
+		position: relative;
+		text-decoration: none;
+		color: $maincolor;
+	}
+	li a:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		bottom: 0;
+		left: 0;
+		background-color: $maincolor;
+		visibility: hidden;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+	li a:hover{
+		color: $maincolor;
+	}
+	li a:hover:before{
+		color: $maincolor;
+		visibility: visible;
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
 	}
 }
 .navcontainer {
