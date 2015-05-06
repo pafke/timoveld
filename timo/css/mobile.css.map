@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,oBAAqB;EACpB,SAAS,EAAE,aAAa;;AAEzB,gBAAiB;EAChB,UAAU,ECLH,IAAI;EDMX,KAAK,ECPM,OAAO",
+"mappings": "AAEA,oBAAqB,GACpB,SAAS,EAAE,aAAa;;AAEzB,gBAAiB,GAChB,UAAU,ECLH,IAAI,EDMX,KAAK,ECPM,OAAO",
 "sources": ["../scss/mobile.scss","../scss/_variables.scss"],
 "names": [],
 "file": "mobile.css"
