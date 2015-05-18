@@ -164,7 +164,7 @@ get_header(); ?>
 						<label>Email</label>
 					</div>
 					<div class="group">      
-						<textarea id="Message" cols="20" rows="5" name="Message" required></textarea>
+						<textarea id="Message" rows="5" name="Message" required></textarea>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Project beschrijving</label>

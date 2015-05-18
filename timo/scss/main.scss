@@ -456,6 +456,9 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid
   -moz-transition:0.2s ease all; 
   -webkit-transition:0.2s ease all;
 }
+textarea ~ .bar:before, textarea ~ .bar:after {
+	height: 3px;
+}
 .bar:before {
   left:50%;
 }
