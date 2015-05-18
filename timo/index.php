@@ -160,8 +160,12 @@ get_header(); ?>
 					$headers = 'From: '.$_POST['naam'].' <'.$_POST['email'].'>'."\r\n";
 					
 					wp_mail( $to, $subject, $message, $headers);
-				echo '<p class="cursive">Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op!</p>';
+				echo '<p class="cursive"><em>Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op!</em></p>'.
+				"<script>var distanceTop = $('#gunwerk-scrollTo').offset().top;$('html,body').animate({scrollTop: distanceTop},1000);</script>";
 			}
+			
+			
+		
 			// otherwise, let the spammer think that they got their message through
 			?>
 			<div class="centercontainer">

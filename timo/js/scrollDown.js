@@ -8,7 +8,6 @@ $('.mobilenav a').click(function(){
 	$('.fulloverlay').fadeToggle();
 	var identifier = $(this).attr('class');
 
-	console.log(identifier);
 	if(identifier == 'top-scrollTo'){
 		$('html,body').animate({scrollTop: 0},1000);
 	}
