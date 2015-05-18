@@ -24,17 +24,21 @@
 		height: 100px;
 	}
 	.centercontainer {
-		display: inline-block;
+		display: flex;
+		justify-content: center;
 	}
 	.gunform {
 		float: left;
-		width: 400px;
-		padding: 5%;
+		width: 40%;
 		margin-left: 20px;
+		padding: 0;
+	}
+	.gunform form {
+		padding: 5%;
 	}
 	.desc-gun {
 		float: left;
-		width: 400px;
+		width: 40%;
 		text-align: right;
 		margin-right: 20px;
 	}
