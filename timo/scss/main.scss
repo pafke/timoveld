@@ -480,15 +480,15 @@ input:focus ~ .highlight {
   animation:inputHighlighter 0.3s ease;
 }
 @-webkit-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes inputHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 textarea:focus ~ .highlight {
@@ -497,15 +497,15 @@ textarea:focus ~ .highlight {
   animation:textareaHighlighter 0.3s ease;
 }
 @-webkit-keyframes textareaHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 @-moz-keyframes textareaHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 @keyframes textareaHighlighter {
-	from { background:#5264AE; }
+	from { background:$maincolor; }
   to 	{ width:0; background:transparent; }
 }
 .content.contact {

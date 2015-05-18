@@ -167,7 +167,7 @@ get_header(); ?>
 						<textarea id="Message" cols="20" rows="5" name="Message" required></textarea>
 						<span class="highlight"></span>
 						<span class="bar"></span>
-						<label>Bericht</label>
+						<label>Project beschrijving</label>
 					</div>
 					<input type="submit">
 				</form>
