@@ -157,7 +157,7 @@ get_header(); ?>
 					$to = 'mail@timoveld.nl';
 					$subject = 'Gunwerk formulier timoveld.nl';
 					$message = $_POST['naam']."\r\n".$_POST['bericht'];
-					$headers = 'From: My Name <'.$_POST['email'].'>'."\r\n";
+					$headers = 'From: '.$_POST['naam'].' <'.$_POST['email'].'>'."\r\n";
 					
 					wp_mail( $to, $subject, $message, $headers);
 				echo '<p class="cursive">Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op!</p>';
