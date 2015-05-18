@@ -79,7 +79,7 @@ get_header(); ?>
 							<?php the_title(); ?>
 						</div>
 						<div class="skilllevel" data-skilllvl="<?php echo ($skill*10); ?>">
-						
+
 						</div>
 					</div>
 
@@ -144,6 +144,50 @@ get_header(); ?>
 				<p><?php _e( 'Er is iets mis gegaan.' ); ?></p>
 			<?php endif; ?>
 
+			</div>
+		</section>
+
+		<section class="content maincolorBG" id="gunwerk-scrollTo">
+			<h2>Gunwerk</h2>
+			<div class="left-mid">
+				<form>
+					<div class="group">      
+						<input type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Naam</label>
+					</div>					  
+					<div class="group">      
+						<input type="text" required>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Email</label>
+					</div>
+					<div class="group">      
+						<textarea id="Message" cols="20" rows="5" name="Message"></textarea>
+						<span class="highlight"></span>
+						<span class="bar"></span>
+						<label>Bericht</label>
+					</div>
+				</form>
+			</div>
+			<div class="right-mid">
+				<p>
+					Heb je een case liggen die een creatieve aanpak vereist?<br>
+					Maandelijks ben ik +/- 4 uur beschikbaar voor "gunwerk".<br>
+					Gunwerk kan van alles inhouden. Van logo animaties tot ingewikkelde bugfixes.<br>
+					Mijn enige wens is dat het een interessant project is en dat het rond de 4 uur in beslag neemt.
+				</p>
+				<p>
+					Gunwerk wordt gegund. Dit houdt in dat er niet voor betaald hoeft te worden. <br>
+					Echter, mocht er een kratje bier voor mijn deur verschijnen met een bedank briefje. Dan worden er verder geen vragen gesteld.
+				</p>
+				<p>
+					Wil je weten of jouw project in aanmerking komt? Stuur een berichtje met een korte beschrijving van je project.
+				</p>
+				<p>
+					<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Email</a>
+				</p>
 			</div>
 		</section>
 		<?php get_footer(); ?>
