@@ -23,4 +23,19 @@
 		width: 100px;
 		height: 100px;
 	}
+	.centercontainer {
+		display: inline-block;
+	}
+	.gunform {
+		float: left;
+		width: 400px;
+		padding: 5%;
+		margin-left: 20px;
+	}
+	.desc-gun {
+		float: left;
+		width: 400px;
+		text-align: right;
+		margin-right: 20px;
+	}
 }

@@ -149,43 +149,46 @@ get_header(); ?>
 
 		<section class="content maincolorBG" id="gunwerk-scrollTo">
 			<h2>Gunwerk</h2>
-			<div class="desc-text">
-				<p>
-					Heb je een case liggen die een <em>creatieve aanpak</em> vereist?<br>
-					Maandelijks ben ik <em>+/- 4 uur</em> beschikbaar voor <em>"gunwerk"</em>.<br>
-					Gunwerk kan van alles inhouden. Van <em>logo animaties</em> tot ingewikkelde <em>bugfixes</em>.<br>
-					Mijn enige wens is dat het een <em>interessant project</em> is en dat het rond de 4 uur in beslag neemt.
-				</p>
-				<p>
-					Gunwerk wordt gegund. Dit houdt in dat er <em>niet</em> voor <em>betaald</em> hoeft te worden. <br>
-					Echter, mocht er een kratje bier voor mijn deur verschijnen met een bedank briefje. Dan worden er verder geen vragen gesteld.
-				</p>
-				<p>
-					Wil je weten of jouw project in aanmerking komt? <em>Stuur een berichtje</em> met een korte beschrijving van je project.
-				</p>
+			<div class="centercontainer">
+				<div class="desc-gun">
+					<p>
+						Heb je een case liggen die een <em>creatieve aanpak</em> vereist?<br>
+						Maandelijks ben ik <em>+/- 4 uur</em> beschikbaar voor <em>"gunwerk"</em>.<br>
+						Gunwerk kan van alles inhouden. Van <em>logo animaties</em> tot ingewikkelde <em>bugfixes</em>.<br>
+						Mijn enige wens is dat het een <em>interessant project</em> is en dat het rond de 4 uur in beslag neemt.
+					</p>
+					<p>
+						Gunwerk wordt gegund. Dit houdt in dat er <em>niet</em> voor <em>betaald</em> hoeft te worden. <br>
+						Echter, mocht er een kratje bier voor mijn deur verschijnen met een bedank briefje. Dan worden er verder geen vragen gesteld.
+					</p>
+					<p>
+						Wil je weten of jouw project in aanmerking komt? <em>Stuur een berichtje</em> met een korte beschrijving van je project.
+					</p>
+				</div>
+				<div class="gunform">
+					<form>
+						<div class="group">
+							<input type="text" required>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Naam</label>
+						</div>
+						<div class="group">
+							<input type="text" required>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Email</label>
+						</div>
+						<div class="group">
+							<textarea id="Message" rows="5" name="Message" required></textarea>
+							<span class="highlight"></span>
+							<span class="bar"></span>
+							<label>Project beschrijving</label>
+						</div>
+						<input type="submit" value="Gunnen man!">
+					</form>
+				</div>
+				<div class="clear"></div>
 			</div>
-			<div class="gunform">
-				<form>
-					<div class="group">      
-						<input type="text" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Naam</label>
-					</div>					  
-					<div class="group">      
-						<input type="text" required>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Email</label>
-					</div>
-					<div class="group">      
-						<textarea id="Message" rows="5" name="Message" required></textarea>
-						<span class="highlight"></span>
-						<span class="bar"></span>
-						<label>Project beschrijving</label>
-					</div>
-					<input type="submit" value="Gunnen man!">
-				</form>
-			</div>			
 		</section>
 		<?php get_footer(); ?>
