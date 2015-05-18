@@ -164,11 +164,12 @@ get_header(); ?>
 						<label>Email</label>
 					</div>
 					<div class="group">      
-						<textarea id="Message" cols="20" rows="5" name="Message"></textarea>
+						<textarea id="Message" cols="20" rows="5" name="Message" required></textarea>
 						<span class="highlight"></span>
 						<span class="bar"></span>
 						<label>Bericht</label>
 					</div>
+					<input type="submit">
 				</form>
 			</div>
 			<div class="right-mid">
