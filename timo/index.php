@@ -150,23 +150,15 @@ get_header(); ?>
 		<section class="content maincolorBG" id="gunwerk-scrollTo">
 			<h2>Gunwerk</h2>
 			<?php
-			// if the url field is empty
 			if(isset($_POST['url']) && $_POST['url'] == ''){
-				 // then send the form to your email
-					//mail( 'you@yoursite.com', 'Contact Form', print_r($_POST,true) );
 					$to = 'mail@timoveld.nl';
 					$subject = 'Gunwerk formulier timoveld.nl';
 					$message = $_POST['naam']."\r\n".$_POST['bericht'];
 					$headers = 'From: '.$_POST['naam'].' <'.$_POST['email'].'>'."\r\n";
-					
 					wp_mail( $to, $subject, $message, $headers);
 				echo '<p class="cursive"><em>Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op!</em></p>'.
-				"<script>var distanceTop = $('#gunwerk-scrollTo').offset().top;$('html,body').animate({scrollTop: distanceTop},1000);</script>";
+				"<script>var distanceTop = $('#gunwerk-scrollTo').offset().top;$('html,body').animate({scrollTop: distanceTop},500);</script>";
 			}
-			
-			
-		
-			// otherwise, let the spammer think that they got their message through
 			?>
 			<div class="centercontainer">
 				<div class="desc-gun">
