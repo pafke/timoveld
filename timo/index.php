@@ -149,6 +149,21 @@ get_header(); ?>
 
 		<section class="content maincolorBG" id="gunwerk-scrollTo">
 			<h2>Gunwerk</h2>
+			<?php
+			// if the url field is empty
+			if(isset($_POST['url']) && $_POST['url'] == ''){
+				 // then send the form to your email
+					//mail( 'you@yoursite.com', 'Contact Form', print_r($_POST,true) );
+					$to = 'mail@timoveld.nl';
+					$subject = 'Gunwerk formulier timoveld.nl';
+					$message = $_POST['naam']."\r\n".$_POST['bericht'];
+					$headers = 'From: My Name <'.$_POST['email'].'>'."\r\n";
+					
+					wp_mail( $to, $subject, $message, $headers);
+				echo '<p class="cursive">Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op!</p>';
+			}
+			// otherwise, let the spammer think that they got their message through
+			?>
 			<div class="centercontainer">
 				<div class="desc-gun">
 					<p>
@@ -166,25 +181,26 @@ get_header(); ?>
 					</p>
 				</div>
 				<div class="gunform">
-					<form>
+					<form method="post">
 						<div class="group">
-							<input type="text" required>
+							<input name="naam" type="text" required>
 							<span class="highlight"></span>
 							<span class="bar"></span>
 							<label>Naam</label>
 						</div>
 						<div class="group">
-							<input type="text" required>
+							<input name="email" type="text" required>
 							<span class="highlight"></span>
 							<span class="bar"></span>
 							<label>Email</label>
 						</div>
 						<div class="group">
-							<textarea id="Message" rows="5" name="Message" required></textarea>
+							<textarea id="Message" rows="5" name="bericht" required></textarea>
 							<span class="highlight"></span>
 							<span class="bar"></span>
 							<label>Project beschrijving</label>
 						</div>
+					    <p class="tegenrotzooi">Leave this empty: <input type="text" name="url" /></p>
 						<input type="submit" value="Gunnen man!">
 					</form>
 				</div>

@@ -36,6 +36,9 @@ a {
 	cursor: pointer;
 	cursor: hand;
 }
+.cursive {
+	font-style: italic;
+}
 .clear {
 	clear: both;
 }
@@ -556,6 +559,9 @@ textarea:focus ~ .highlight {
 	h2 {
 		color: #444;
 	}
+}
+.tegenrotzooi {
+	display: none;
 }
 
 /* MEDIUM SIZE */
