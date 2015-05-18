@@ -16,6 +16,7 @@
 					<li><a class="voorstellen-scrollTo" href="javascript:void(0)">Even voorstellen</a></li>
 					<li><a class="skillset-scrollTo" href="javascript:void(0)">I got skills!</a></li>
 					<li><a class="werk-scrollTo" href="javascript:void(0)">Werk</a></li>
+					<li><a class="gunwerk-scrollTo" href="javascript:void(0)">Gunwerk</a></li>
 					<li><a class="contact-scrollTo" href="javascript:void(0)">Contact</a></li>
 				</ul>
 			</nav>
