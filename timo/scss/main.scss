@@ -21,8 +21,8 @@ h3 {
 em {
 	font-weight: 600;
 }
-p{
-	margin-top:10px;
+p {
+	margin-top:20px;
 }
 a {
 	color: $maincolor;
@@ -404,13 +404,28 @@ $z-index-navigation-inner: $z-index-navigation-button + 25;
 	margin-top: 15px;
 }
 /* CONTACT FORMULIER */
-.left-mid {
+input[type="submit"] {
+	border: solid 2px $maincolor;
+	background: $light;
+	color: $maincolor;
+	font-weight: normal;
+	cursor: pointer;
+	cursor: mouse;
+	padding: 15px;
+}
+input[type="submit"]:hover {
+	background: $maincolor;
+	border-color: $light;
+	color: $light;
+}
+.gunform {
 	background:$light;
 	padding: 10%;
+	margin-top: 20px;
 }
-.group { 
-  position:relative; 
-  margin-bottom:45px; 
+.group {
+  position:relative;
+  margin-bottom:45px;
 }
 input, textarea {
   font-size:18px;
@@ -420,19 +435,19 @@ input, textarea {
   border:none;
   border-bottom:1px solid $maincolor;
 }
-input:focus, textarea:focus { 
-	outline:none; 
+input:focus, textarea:focus {
+	outline:none;
 }
 label {
-  color:$maincolor; 
+  color:$maincolor;
   font-size:18px;
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
 input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid ~ label {
@@ -440,20 +455,20 @@ input:focus ~ label, input:valid ~ label, textarea:focus ~ label, textarea:valid
   font-size:14px;
   color:$maincolor;
 }
-.bar { 
-	position:relative; 
-	display:block; 
-	width:100%; 
+.bar {
+	position:relative;
+	display:block;
+	width:100%;
 }
 .bar:before, .bar:after {
   content:'';
-  height:2px; 
+  height:2px;
   width:0;
-  bottom:1px; 
+  bottom:1px;
   position:absolute;
-  background:$maincolor; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  background:$maincolor;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
 textarea ~ .bar:before, textarea ~ .bar:after {
@@ -463,16 +478,16 @@ textarea ~ .bar:before, textarea ~ .bar:after {
   left:50%;
 }
 .bar:after {
-  right:50%; 
+  right:50%;
 }
 input:focus ~ .bar:before, input:focus ~ .bar:after, textarea:focus ~ .bar:before, textarea:focus ~ .bar:after  {
   width:50%;
 }
 .highlight {
   position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
+  height:60%;
+  width:100px;
+  top:25%;
   left:0;
   pointer-events:none;
   opacity:0.5;
