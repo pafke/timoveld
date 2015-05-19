@@ -208,3 +208,6 @@ function skill_save_quick_edit_data($post_id) {
     return $skill_set_id;
 }
 add_action('save_post', 'skill_save_quick_edit_data');
+
+// Remove automatic class from thumbnails
+remove_action( 'begin_fetch_post_thumbnail_html', '_wp_post_thumbnail_class_filter_add' );
