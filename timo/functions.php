@@ -34,7 +34,7 @@ function theme_name_scripts() {
 	wp_deregister_script('jquery');
 	wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js", false, null);
 	wp_enqueue_script('jquery');
-	wp_enqueue_script( 'masonry', get_template_directory_uri() . '/js/masonry.min.js', '', '', false);
+	wp_enqueue_script( 'masonry_include', get_template_directory_uri() . '/js/masonry.min.js', '', '', false);
 	wp_enqueue_script( 'scrollDown', get_template_directory_uri() . '/js/scrollDown.js', '', '', true);
 	wp_enqueue_script( 'jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.js', '', '', true);
 	wp_enqueue_script( 'waypoint-scrollTos', get_template_directory_uri() . '/js/waypoint.triggers.js', '', '', true);
