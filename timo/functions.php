@@ -211,3 +211,7 @@ add_action('save_post', 'skill_save_quick_edit_data');
 
 // Remove automatic class from thumbnails
 remove_action( 'begin_fetch_post_thumbnail_html', '_wp_post_thumbnail_class_filter_add' );
+
+//Emoji support verwijderen
+remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
+remove_action( 'wp_print_styles', 'print_emoji_styles' ); 
