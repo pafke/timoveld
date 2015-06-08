@@ -24,28 +24,35 @@ get_header(); ?>
 
 		<section class="content" id="voorstellen-scrollTo">
 			<h2>Hallo daar</h2>
-			<p>
-				Mijn naam is <em>Timo Veld</em><br>
-				en ik maak <em>websites</em> en <em>animaties.</em>
-			</p>
-			<p>
-				<em>Mooie dingen</em> maken vind ik gaaf.<br>
-				Problemen <em>oplossen</em> doe ik graag.
-			</p>
-			<p>
-				Momenteel werk ik bij <a href="http://www.bigimpact.com" target="_blank">Big Impact.</a><br>
-				Maar voor een <em>interessant project</em>,<br>
-				kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
-			</p>
-			<p>
-				<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
-			</p>
-			<p>
-				<a href="http://nl.linkedin.com/in/timoveld" target="_blank" class="iconfont">&#xe807;</a>
-			</p>
-			<p>
-				<a href="http://stackoverflow.com/users/3008011/user3008011" target="_blank" class="iconfont">&#xe806;</a>
-			</p>
+			<div class="centercontainer">
+				<div class="desc-gun">
+					<p>
+						Mijn naam is <em>Timo Veld</em><br>
+						en ik maak <em>websites</em> en <em>animaties.</em>
+					</p>
+					<p>
+						<em>Mooie dingen</em> maken vind ik gaaf.<br>
+						Problemen <em>oplossen</em> doe ik graag.
+					</p>
+					<p>
+						Momenteel werk ik bij <a href="http://www.bigimpact.com" target="_blank">Big Impact.</a><br>
+						Maar voor een <em>interessant project</em>,<br>
+						kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
+					</p>
+				</div>
+				<div class="gunform" style="text-align:left;">
+					<p style="margin-top: 0;">
+						<a style="margin-top: 0;" class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
+					</p>
+					<p>
+						<a class="buttonLight" href="http://nl.linkedin.com/in/timoveld" target="_blank"><span>&#xe807;</span> Linkedin</a>
+					</p>
+					<p>
+						<a class="buttonLight" href="http://stackoverflow.com/users/3008011/user3008011" target="_blank"><span>&#xe806;</span> Stackoverflow</a>
+					</p>
+				</div>
+				<div class="clear"></div>
+			</div>		
 			<img src="<?php echo get_template_directory_uri(); ?>/img/self.svg" class="roundimg self" alt="timoveld">
 		</section>
 

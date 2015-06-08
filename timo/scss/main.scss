@@ -1,6 +1,6 @@
-@import 'reset';
-@import 'variables';
-@import 'fonts';
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'fonts.scss';
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -92,10 +92,8 @@ a {
 	content: "\A";
 	white-space: pre;
 }
-.iconfont {
+.buttonLight span {
 	font-family: 'fontello';
-	font-size: 36px;
-	margin-top: 15px;
 	display: inline-block;
 }
 .absolutecenter {
@@ -567,10 +565,10 @@ textarea:focus ~ .highlight {
 }
 
 /* MEDIUM SIZE */
-@import 'size_med';
+@import 'size_med.scss';
 
 /* LARGE SIZE */
-@import 'size_large';
+@import 'size_large.scss';
 
 /* OVERWRITES */
-@import 'overwrites';
+@import 'overwrites.scss';
