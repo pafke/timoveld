@@ -25,7 +25,7 @@ get_header(); ?>
 		<section class="content" id="voorstellen-scrollTo">
 			<h2>Hallo daar</h2>
 			<div class="centercontainer">
-				<div class="desc-gun">
+				<div class="leftfloat">
 					<p>
 						Mijn naam is <em>Timo Veld</em><br>
 						en ik maak <em>websites</em> en <em>animaties.</em>
@@ -40,9 +40,9 @@ get_header(); ?>
 						kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
 					</p>
 				</div>
-				<div class="gunform" style="text-align:left;">
-					<p style="margin-top: 0;">
-						<a style="margin-top: 0;" class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
+				<div class="rightfloat" style="text-align:left;">
+					<p>
+						<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
 					</p>
 					<p>
 						<a class="buttonLight" href="http://nl.linkedin.com/in/timoveld" target="_blank"><span>&#xe807;</span> Linkedin</a>
@@ -168,7 +168,7 @@ get_header(); ?>
 			}
 			?>
 			<div class="centercontainer">
-				<div class="desc-gun">
+				<div class="leftfloat">
 					<p>
 						Heb je een case liggen die een <em>creatieve aanpak</em> vereist?<br>
 						Maandelijks ben ik <em>+/- 4 uur</em> beschikbaar voor <em>"gunwerk"</em>.<br>
@@ -183,7 +183,7 @@ get_header(); ?>
 						Wil je weten of jouw project in aanmerking komt? <em>Stuur een berichtje</em> met een korte beschrijving van je project.
 					</p>
 				</div>
-				<div class="gunform">
+				<div class="rightfloat">
 					<form method="post">
 						<div class="group">
 							<input name="naam" type="text" required>
