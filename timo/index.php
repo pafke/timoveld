@@ -40,7 +40,7 @@ get_header(); ?>
 						kun je altijd <a class="contact-scrollTo" href="javascript:void(0)">contact</a> met mij opnemen.
 					</p>
 				</div>
-				<div class="rightfloat" style="text-align:left;">
+				<div class="rightfloat">
 					<p>
 						<a class="buttonLight" href="<?php echo get_template_directory_uri(); ?>/resources/CurriculumVitae_TimoVeld.doc">Download mijn CV</a>
 					</p>
