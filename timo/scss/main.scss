@@ -386,7 +386,8 @@ $z-index-navigation-inner: $z-index-navigation-button + 25;
 	width: 60%;
 	background: $light;
 }
-.skillset {
+.skillset {	
+	overflow: hidden;
 	border: solid 4px $light;
 	padding: 25px;
 	width: 80%;

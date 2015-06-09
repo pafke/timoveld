@@ -29,13 +29,25 @@ $(document).ready(function(){
 });
 
 /* Toon alle skills toggle */
+var orgHeight = $('.skillset').height();
+$('.skillset').height(orgHeight);
+$( window ).resize(function() {
+	$('.clickedshow').hide().removeClass('clickedshow');
+	$('.showmore').html('Toon alles');
+	$('.skillset').height('auto');
+	orgHeight = $('.skillset').height();
+	$('.skillset').height(orgHeight);
+});
 $('.showmore').click(function(){
 	if($('.skillset .clickedshow').length){
 		$('.clickedshow').fadeOut().removeClass('clickedshow');
 		$(this).html('Toon alles');
+		$('.skillset').animate({height: orgHeight+50});
 	}else{
 		$(this).parent().find('.row:hidden').hide().fadeIn().css('display','table-row').addClass('clickedshow');
 		$(this).html('Toon minder');
+		var newheight = $('#stretcher').height();
+		$('.skillset').animate({height: newheight+50});		
 	}
 });
 
