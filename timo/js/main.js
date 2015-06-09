@@ -39,6 +39,32 @@ $('.showmore').click(function(){
 	}
 });
 
+/* SVG image self interactief maken */
+$( "svg" ).mousemove(function( event ) {
+	var mouseX = event.pageX;
+	var mouseY = event.pageY;
+	var theRangeSquared = 75 * 75;
+	var maxOffset = 20;
+
+	$('g').each(function(){
+		var position = $(this).position();
+		var coordX = position.left;
+		var coordY = position.top;
+		var dx = coordX - mouseX;
+		var dy = coordY - mouseY;
+		var distanceSquared = (dx * dx + dy * dy);
+		var tx = 0, ty = 0;
+		if (distanceSquared < theRangeSquared && distanceSquared != 0)
+		{
+			var shift = maxOffset * (theRangeSquared - distanceSquared) / theRangeSquared;
+			var distance = Math.sqrt(distanceSquared);
+			tx = shift * dx / distance;
+			ty = shift * dy / distance;
+		}
+		$(this).attr('transform', "translate(" + tx + " " + ty + ")");
+	});
+});
+
 /* Analytics */
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
