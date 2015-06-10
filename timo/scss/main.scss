@@ -560,8 +560,9 @@ textarea:focus ~ .highlight {
 	background: #f0f0f0;
 	text-align: left;
 	a {
-		clear: left;
+		display: block;
 		font-size: 24px;
+		margin: 10px 0;
 	}
 	a:after {
 		content:"\A";
