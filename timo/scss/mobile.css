@@ -1,8 +1,2 @@
-.item:hover .overlay {
-  transform: translatey(0); }
-
-.overlay a:hover {
-  background: #FFF;
-  color: #50ccb7; }
-
+.item:hover .overlay{transform:translatey(0)}.overlay a:hover{background:#FFF;color:#50ccb7}
 /*# sourceMappingURL=mobile.css.map */
