@@ -27,6 +27,7 @@ add_action( 'wp_enqueue_scripts', 'themes' );
 function add_header_data() { ?>
 	<link rel="shortcut icon" href="<?php echo bloginfo('stylesheet_directory') ?>/favicon.ico" >
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Mijn naam is Timo Veld. Ik maak websites en animaties die je op dit portfolio kunt bekijken. Wil je meer weten? Twijfel dan niet om contact met mij op te nemen!"/>
 <?php }
 add_action('wp_head', 'add_header_data');
 
