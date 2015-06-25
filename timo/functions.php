@@ -14,8 +14,8 @@ function themes() {
 	wp_enqueue_style( 'folder-style', get_stylesheet_uri() );
 	if (! wp_is_mobile() ) {
 		wp_enqueue_style( 'desktop-style',  get_bloginfo('template_directory')."/css/mobile.css" );
-	}
-	wp_enqueue_style( 'fonts', "http://fonts.googleapis.com/css?family=Raleway:700,800,100,400,200,300" );
+	}	
+	wp_enqueue_style( 'fonts', "http://fonts.googleapis.com/css?family=Raleway:400,100,600" );
 	//wp_enqueue_style( 'swipebox-style',  get_bloginfo('template_directory')."/css/swipebox.css" );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
