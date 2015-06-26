@@ -33,7 +33,7 @@ add_action('wp_head', 'add_header_data');
 
 function theme_name_scripts() {
 	wp_deregister_script('jquery');
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', true);
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', false);
 	wp_enqueue_script( 'masonry_include', get_template_directory_uri() . '/js/masonry.min.js', '', '', true);
 	wp_enqueue_script( 'scrollDown', get_template_directory_uri() . '/js/scrollDown.js', '', '', true);
 	wp_enqueue_script( 'jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', '', '', true);
