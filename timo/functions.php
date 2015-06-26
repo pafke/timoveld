@@ -13,7 +13,7 @@ add_image_size( 'portfolio-small', 400, 300, true );
 function themes() {
 	wp_enqueue_style( 'folder-style', get_stylesheet_uri() );
 	if (! wp_is_mobile() ) {
-		wp_enqueue_style( 'desktop-style',  get_bloginfo('template_directory')."/css/mobile.css" );
+		wp_enqueue_style( 'desktop-style',  get_bloginfo('template_directory')."/css/mobile.css");
 	}	
 	wp_enqueue_style( 'fonts', "http://fonts.googleapis.com/css?family=Raleway:400,100,600" );
 	//wp_enqueue_style( 'swipebox-style',  get_bloginfo('template_directory')."/css/swipebox.css" );
@@ -33,7 +33,7 @@ add_action('wp_head', 'add_header_data');
 
 function theme_name_scripts() {
 	wp_deregister_script('jquery');
-	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', false);
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery.min.js', '', '', true);
 	wp_enqueue_script( 'masonry_include', get_template_directory_uri() . '/js/masonry.min.js', '', '', true);
 	wp_enqueue_script( 'scrollDown', get_template_directory_uri() . '/js/scrollDown.js', '', '', true);
 	wp_enqueue_script( 'jquery-waypoints', get_template_directory_uri() . '/js/jquery.waypoints.min.js', '', '', true);
