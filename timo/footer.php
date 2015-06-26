@@ -19,7 +19,16 @@
 			</div>
 		</section>
 
-		<?php wp_footer(); ?>		
+		<?php wp_footer(); ?>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+		<script>
+		WebFont.load({
+			google: {
+				families: ['Raleway:100,400,600']
+			}
+		});
+		</script>
 
 		<?php
 		if ( wp_is_mobile() ) {

@@ -1235,4 +1235,4 @@ get_header(); ?>
 				<div class="clear"></div>
 			</div>
 		</section>
-		<?php get_footer(); ?>
+		<?php get_footer(); ?>		
