@@ -7,7 +7,7 @@
 	<body>
 		<section class="fullscreen maincolorBG">
 			<div class="centermsg">
-				Test page
+				Test 2
 			</div>
 		</section>
 	</body>
