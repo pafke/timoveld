@@ -31,13 +31,17 @@ a {
 .splashlogo {
 	width: 120px;
 	height: 120px;
-	circle {
+	circle,line,polygon {
 		fill: none;
 		stroke: #FFF;
-		/* class="outer" r="141.501" cy="145.001" cx="145" stroke-miterlimit="10" stroke-width="2" */
+		stroke-dasharray: 1000;
+		stroke-dashoffset: 1000;
+		animation: dash 5s linear forwards;
 	}
-	line {
-		stroke: #FFF;
+}
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
 	}
 }
 #scrolldown {
