@@ -42,7 +42,12 @@ a {
 }
 #scrolldown {
 	cursor: pointer;
-	cursor: hand;
+	cursor: hand;	
+	animation: beat .60s infinite alternate;
+	transform-origin: center;
+}
+@keyframes beat{
+	to { transform: scale(1.3); }
 }
 .cursive {
 	font-style: italic;
