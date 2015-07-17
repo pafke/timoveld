@@ -52,7 +52,7 @@ $('.showmore').click(function(){
 });
 
 /* SVG image self interactief maken */
-$( "svg" ).mousemove(function( event ) {
+$( "#voorstellen-scrollTo").on('mousemove','.roundimg',function( event ) {
 	var mouseX = event.pageX;
 	var mouseY = event.pageY;
 	var theRangeSquared = 75 * 75;
