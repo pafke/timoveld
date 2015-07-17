@@ -18,8 +18,20 @@
 				</p>
 			</div>
 		</section>
+		
+		
+		
 
 		<?php wp_footer(); ?>
+		<script>
+			// Elements to inject
+			var mySVGsToInject = document.querySelectorAll('img.inject-me');
+
+			// Do the injection
+			SVGInjector(mySVGsToInject);
+		</script>
+		
+		
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
 		<script>
