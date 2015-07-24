@@ -23,5 +23,5 @@
 		</div>		
 
 		<div class="logofixed">
-			<img src="<?php echo get_template_directory_uri(); ?>/img/logo_TV.svg" alt="logo_timoveld">
+			<img class="inject-me" src="<?php echo get_template_directory_uri(); ?>/img/logo_TV.svg" alt="logo_timoveld">
 		</div>
