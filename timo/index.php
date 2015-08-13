@@ -39,7 +39,7 @@ get_header(); ?>
 						<a class="buttonLight" href="http://nl.linkedin.com/in/timoveld" target="_blank"><span>&#xe807;</span> Linkedin</a>
 					</p>
 					<p>
-						<a class="buttonLight" href="http://stackoverflow.com/users/3008011/user3008011" target="_blank"><span>&#xe806;</span> Stackoverflow</a>
+						<a class="buttonLight" href="http://stackoverflow.com/users/5127982/timo" target="_blank"><span>&#xe806;</span> Stackoverflow</a>
 					</p>
 				</div>
 				<div class="clear"></div>
