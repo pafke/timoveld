@@ -44,7 +44,7 @@ get_header(); ?>
 				</div>
 				<div class="clear"></div>
 			</div>
-			<img class="inject-me" src="<?php echo get_template_directory_uri(); ?>/img/self.svg">
+			<img class="inject-me" src="<?php echo get_template_directory_uri(); ?>/img/self.svg" alt="Portret Timo">
 		</section>
 
 		<section class="content maincolorBG" id="skillset-scrollTo">
