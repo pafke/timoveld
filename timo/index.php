@@ -97,7 +97,7 @@ get_header(); ?>
 			<?php $query = new WP_Query( 'cat=3'.'&orderby=rand'); ?>
 			<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-				<div class="item">
+				<article class="item">
 					<?php the_post_thumbnail( 'portfolio-small' ); ?>
 					<div class="overlay">
 						<div class="cell">
@@ -138,7 +138,7 @@ get_header(); ?>
 
 						</div>
 					</div>
-				</div>
+				</article>
 
 			<?php endwhile; else : ?>
 				<p><?php _e( 'Er is iets mis gegaan.' ); ?></p>
