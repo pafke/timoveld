@@ -208,6 +208,13 @@ remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'wp_head', 'wlwmanifest_link');
 
+// Remove wordpress generator meta tag
+remove_action('wp_head', 'wp_generator');
+
+//Remove the wp-json header
+remove_action( 'wp_head', 'rest_output_link_wp_head', 10 );
+remove_action( 'wp_head', 'wp_oembed_add_discovery_links', 10 );
+
 // Remove Yoast comment
 add_action('get_header', 'start_ob');
 add_action('wp_head', 'end_ob', 999);
